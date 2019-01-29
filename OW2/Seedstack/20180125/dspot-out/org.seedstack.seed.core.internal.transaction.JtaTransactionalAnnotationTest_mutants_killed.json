@@ -1,0 +1,6 @@
+{
+  "nbMutantKilledOriginally": 3,
+  "name": "org.seedstack.seed.core.internal.transaction.JtaTransactionalAnnotationTest",
+  "nbOriginalTestCases": 7,
+  "testCases": []
+}

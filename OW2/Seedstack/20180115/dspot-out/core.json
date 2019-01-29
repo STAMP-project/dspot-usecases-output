@@ -1,0 +1,69 @@
+{
+  "classTimes": [
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CliIT",
+      "timeInMs": 3780
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CommandIT",
+      "timeInMs": 3260
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ConfigurationIT",
+      "timeInMs": 3763
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ConfigurationProfilesIT",
+      "timeInMs": 2991
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CorePluginIT",
+      "timeInMs": 3049
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CryptoIT",
+      "timeInMs": 3086
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.DiagnosticManagerIT",
+      "timeInMs": 3198
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ExpressionLanguageHandlerIT",
+      "timeInMs": 2877
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ExpressionLanguageIT",
+      "timeInMs": 2923
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.IgnoreIT",
+      "timeInMs": 2991
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.JndiIT",
+      "timeInMs": 3413
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.KeyStoreIT",
+      "timeInMs": 3148
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.LifecycleIT",
+      "timeInMs": 3167
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ValidationIT",
+      "timeInMs": 3095
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.fixtures.TestSeedInitializer",
+      "timeInMs": 578
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.configuration.ConfigurationPluginTest",
+      "timeInMs": 15277
+    }
+  ],
+  "projectName": "core"
+}

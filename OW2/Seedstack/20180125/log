@@ -1,0 +1,4 @@
+2019-01-25 14:34:40,183 INFO eu.stamp_project.Main - Amplification succeed.
+2019-01-25 14:34:40,184 INFO eu.stamp_project.Main - Elapsed time 1004003 ms
+2019-01-25 14:34:40,184 INFO eu.stamp_project.utils.report.GlobalReport - DSpot amplified your test suite without errors. (no errors report will be outputted)
+

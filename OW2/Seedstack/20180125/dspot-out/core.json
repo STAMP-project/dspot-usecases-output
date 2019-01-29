@@ -1,0 +1,157 @@
+{
+  "classTimes": [
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CliIT",
+      "timeInMs": 11439
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CommandIT",
+      "timeInMs": 41186
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ConfigurationIT",
+      "timeInMs": 181529
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ConfigurationProfilesIT",
+      "timeInMs": 51153
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CorePluginIT",
+      "timeInMs": 81209
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.CryptoIT",
+      "timeInMs": 41120
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.DiagnosticManagerIT",
+      "timeInMs": 71190
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ExpressionLanguageHandlerIT",
+      "timeInMs": 31119
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ExpressionLanguageIT",
+      "timeInMs": 51139
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.IgnoreIT",
+      "timeInMs": 21083
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.JndiIT",
+      "timeInMs": 91224
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.KeyStoreIT",
+      "timeInMs": 11077
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.LifecycleIT",
+      "timeInMs": 11106
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.ValidationIT",
+      "timeInMs": 121146
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.configuration.ConfigurationPluginTest",
+      "timeInMs": 16693
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.configuration.HostAndPortMapperTest",
+      "timeInMs": 11754
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.configuration.ProfileProcessorTest",
+      "timeInMs": 9550
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.configuration.RemovalProcessorTest",
+      "timeInMs": 8131
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.CryptoPluginTest",
+      "timeInMs": 398
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.DecryptFunctionTest",
+      "timeInMs": 543
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.EncryptionServiceBindingFactoryTest",
+      "timeInMs": 8111
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.EncryptionServiceFactoryTest",
+      "timeInMs": 419
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.EncryptionServiceImplTest",
+      "timeInMs": 374
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.KeyPairConfigFactoryTest",
+      "timeInMs": 630
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.KeyStoreLoaderTest",
+      "timeInMs": 8340
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.crypto.PBKDF2HashingSupportTest",
+      "timeInMs": 8978
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.diagnostic.DefaultDiagnosticReporterTest",
+      "timeInMs": 8740
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.diagnostic.DiagnosticPluginTest",
+      "timeInMs": 21593
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.guice.BindingUtilsTest",
+      "timeInMs": 10194
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.init.ProxyManagerTest",
+      "timeInMs": 750
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.jndi.JndiPluginTest",
+      "timeInMs": 355
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.logging.MembersInjectorTest",
+      "timeInMs": 8452
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.AbstractTransactionManagerTest",
+      "timeInMs": 27072
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.JtaTransactionManagerTest",
+      "timeInMs": 500
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.JtaTransactionalAnnotationTest",
+      "timeInMs": 9512
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.LocalTransactionManagerTest",
+      "timeInMs": 560
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.TransactionPluginTest",
+      "timeInMs": 15407
+    },
+    {
+      "fullQualifiedName": "org.seedstack.seed.core.internal.transaction.TransactionalAnnotationTest",
+      "timeInMs": 9432
+    }
+  ],
+  "projectName": "core"
+}
