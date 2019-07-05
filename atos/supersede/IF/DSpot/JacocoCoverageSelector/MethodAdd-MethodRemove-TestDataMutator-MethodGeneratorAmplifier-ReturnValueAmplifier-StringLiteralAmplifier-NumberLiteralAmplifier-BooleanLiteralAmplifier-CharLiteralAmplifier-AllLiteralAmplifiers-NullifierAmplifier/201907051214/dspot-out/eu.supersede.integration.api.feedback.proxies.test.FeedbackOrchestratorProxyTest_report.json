@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.feedback.proxies.test.FeedbackOrchestratorProxyTest",
+  "nbOriginalTestCases": 58,
+  "initialInstructionCovered": 4088,
+  "initialInstructionTotal": 31521,
+  "percentageinitialInstructionCovered": 12.969131689984456,
+  "amplifiedInstructionCovered": 4397,
+  "amplifiedInstructionTotal": 31521,
+  "percentageamplifiedInstructionCovered": 13.949430538371244,
+  "testCases": []
+}
