@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.datastore.proxies.test.FEDataStoreProxyTest",
+  "nbOriginalTestCases": 9,
+  "initialInstructionCovered": 154,
+  "initialInstructionTotal": 31521,
+  "percentageinitialInstructionCovered": 0.4885631801021541,
+  "amplifiedInstructionCovered": 154,
+  "amplifiedInstructionTotal": 31521,
+  "percentageamplifiedInstructionCovered": 0.4885631801021541,
+  "testCases": []
+}
