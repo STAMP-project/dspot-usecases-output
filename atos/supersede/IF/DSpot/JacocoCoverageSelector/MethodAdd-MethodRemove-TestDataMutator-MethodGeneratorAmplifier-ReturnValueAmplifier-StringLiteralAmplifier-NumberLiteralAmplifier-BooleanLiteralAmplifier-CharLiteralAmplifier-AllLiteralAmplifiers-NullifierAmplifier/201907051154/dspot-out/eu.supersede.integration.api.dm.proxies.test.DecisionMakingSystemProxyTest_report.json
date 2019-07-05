@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.dm.proxies.test.DecisionMakingSystemProxyTest",
+  "nbOriginalTestCases": 3,
+  "initialInstructionCovered": 347,
+  "initialInstructionTotal": 31521,
+  "percentageinitialInstructionCovered": 1.1008533993210876,
+  "amplifiedInstructionCovered": 362,
+  "amplifiedInstructionTotal": 31521,
+  "percentageamplifiedInstructionCovered": 1.1484407220583104,
+  "testCases": []
+}
