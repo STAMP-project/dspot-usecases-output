@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.monitoring.proxies.test.TwitterMonitorProxyTest",
+  "nbOriginalTestCases": 4,
+  "initialInstructionCovered": 672,
+  "initialInstructionTotal": 31521,
+  "percentageinitialInstructionCovered": 2.1319120586275817,
+  "amplifiedInstructionCovered": 672,
+  "amplifiedInstructionTotal": 31521,
+  "percentageamplifiedInstructionCovered": 2.1319120586275817,
+  "testCases": []
+}
