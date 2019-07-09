@@ -1,0 +1,7 @@
+DSpot encountered 2 error(s) during amplification.
+Could not find any test class that match the given regular expression.
+Your input:
+	eu.supersede.integration.api.monitoring.proxies.test.DiskMonitorProxyTest
+Could not find any test class that match at least one of the given regular expression.
+Your input:
+	eu.supersede.integration.api.monitoring.proxies.test.DiskMonitorProxyTest
