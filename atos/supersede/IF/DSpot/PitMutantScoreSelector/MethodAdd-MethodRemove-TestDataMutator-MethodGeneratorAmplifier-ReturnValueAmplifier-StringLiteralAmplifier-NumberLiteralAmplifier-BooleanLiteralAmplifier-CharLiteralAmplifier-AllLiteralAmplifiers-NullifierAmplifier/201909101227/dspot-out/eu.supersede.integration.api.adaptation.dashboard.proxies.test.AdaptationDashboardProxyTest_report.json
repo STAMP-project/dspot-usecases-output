@@ -1,0 +1,25 @@
+{
+  "nbMutantKilledOriginally": 0,
+  "name": "eu.supersede.integration.api.adaptation.dashboard.proxies.test.AdaptationDashboardProxyTest",
+  "nbOriginalTestCases": 6,
+  "testCases": [
+    {
+      "name": "AdaptationDashboardProxyTest",
+      "nbAssertionAdded": 1563,
+      "nbInputAdded": 32692,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "1",
+          "lineNumber": 87,
+          "locationMethod": "compareTo"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 65,
+          "locationMethod": "getActions"
+        }
+      ]
+    }
+  ]
+}
