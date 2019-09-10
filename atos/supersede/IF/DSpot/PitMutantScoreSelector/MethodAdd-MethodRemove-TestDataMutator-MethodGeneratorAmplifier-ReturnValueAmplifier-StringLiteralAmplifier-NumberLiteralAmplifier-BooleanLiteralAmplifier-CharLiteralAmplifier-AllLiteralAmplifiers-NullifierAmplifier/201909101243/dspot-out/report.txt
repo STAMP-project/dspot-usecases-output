@@ -1,0 +1,4 @@
+Test class that has been amplified: eu.supersede.integration.api.adaptation.dashboard.proxies.test.AdaptationDashboardResetTest
+The original test suite kills 0 mutants
+The amplification results with 1 new tests
+it kills 2 more mutants
