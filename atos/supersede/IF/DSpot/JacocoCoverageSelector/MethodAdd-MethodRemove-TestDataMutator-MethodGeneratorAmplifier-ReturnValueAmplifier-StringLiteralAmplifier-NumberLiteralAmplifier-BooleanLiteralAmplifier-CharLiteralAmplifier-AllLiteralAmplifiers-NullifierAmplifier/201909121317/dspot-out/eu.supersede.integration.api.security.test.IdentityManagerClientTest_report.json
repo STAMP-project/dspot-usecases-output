@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.security.test.IdentityManagerClientTest",
+  "nbOriginalTestCases": 6,
+  "initialInstructionCovered": 315,
+  "initialInstructionTotal": 31521,
+  "percentageinitialInstructionCovered": 0.9993337774816788,
+  "amplifiedInstructionCovered": 323,
+  "amplifiedInstructionTotal": 31521,
+  "percentageamplifiedInstructionCovered": 1.024713682941531,
+  "testCases": []
+}
