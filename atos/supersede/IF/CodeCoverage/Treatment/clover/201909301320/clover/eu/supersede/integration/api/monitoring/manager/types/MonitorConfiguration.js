@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":18,"id":4038,"methods":[{"el":14,"sc":2,"sl":12},{"el":17,"sc":2,"sl":15}],"name":"MonitorConfiguration","sl":10}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_108":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfigurationnull30_failAssert0litNum224_failAssert0","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_131":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_mg14","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_268":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_remove7","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_278":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_remove8","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_312":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfigurationnull30_failAssert0","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_446":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_add1","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_491":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_mg14_add148","pass":true,"statements":[{"sl":13},{"sl":16}]},"test_54":{"methods":[{"sl":12},{"sl":15}],"name":"testCreateUpdateAndDeleteTwitterMonitorConfiguration_remove6","pass":true,"statements":[{"sl":13},{"sl":16}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [108, 312, 54, 491, 278, 446, 268, 131], [108, 312, 54, 491, 278, 446, 268, 131], [], [108, 312, 54, 491, 278, 446, 268, 131], [108, 312, 54, 491, 278, 446, 268, 131], [], []]
