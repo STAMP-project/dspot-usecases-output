@@ -1,0 +1,5 @@
+Initial instruction coverage: 631 / 31642
+1.99%
+Amplification results with 13 amplified tests.
+Amplified instruction coverage: 651 / 31642
+2.06%
