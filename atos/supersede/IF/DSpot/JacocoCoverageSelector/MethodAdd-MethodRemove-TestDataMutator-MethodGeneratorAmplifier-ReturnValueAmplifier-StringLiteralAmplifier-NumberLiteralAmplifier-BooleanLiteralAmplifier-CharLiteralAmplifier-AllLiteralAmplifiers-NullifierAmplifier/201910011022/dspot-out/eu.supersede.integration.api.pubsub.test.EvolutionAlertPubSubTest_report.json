@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.pubsub.test.EvolutionAlertPubSubTest",
+  "nbOriginalTestCases": 6,
+  "initialInstructionCovered": 1519,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 4.800581505593831,
+  "amplifiedInstructionCovered": 1519,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 4.800581505593831,
+  "testCases": []
+}
