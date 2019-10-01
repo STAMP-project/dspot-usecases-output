@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.pubsub.test.AdaptationAlertPubSubTest",
+  "nbOriginalTestCases": 6,
+  "initialInstructionCovered": 1475,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 4.661525820112509,
+  "amplifiedInstructionCovered": 1475,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 4.661525820112509,
+  "testCases": []
+}
