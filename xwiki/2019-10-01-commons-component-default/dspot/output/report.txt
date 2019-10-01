@@ -1,0 +1,29 @@
+Test class that has been amplified: org.xwiki.component.annotation.ComponentAnnotationLoaderTest
+The original test suite kills 33 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.ProviderTest
+The original test suite kills 33 mutants
+The amplification results with 3 new tests
+it kills 12 more mutants
+
+Test class that has been amplified: org.xwiki.component.internal.StackingComponentEventManagerTest
+The original test suite kills 33 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.annotation.ComponentDescriptorFactoryTest
+The original test suite kills 33 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.guice.GuiceCompatibilityTest
+The original test suite kills 33 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.embed.EmbeddableComponentManagerTest
+The original test suite kills 33 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants

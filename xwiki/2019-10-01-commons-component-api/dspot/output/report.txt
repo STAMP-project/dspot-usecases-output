@@ -1,0 +1,34 @@
+Test class that has been amplified: org.xwiki.component.util.DefaultParameterizedTypeTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.descriptor.DefaultComponentDescriptorTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.util.ReflectionMethodUtilsTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.util.ReflectionUtilsTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.internal.namespace.DefaultNamespaceValidatorTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants
+
+Test class that has been amplified: org.xwiki.component.internal.namespace.NamespaceUtilsTest
+The original test suite kills 43 mutants
+The amplification results with 1 new tests
+it kills 3 more mutants
+
+Test class that has been amplified: org.xwiki.component.descriptor.DefaultComponentRoleTest
+The original test suite kills 43 mutants
+The amplification results with 0 new tests
+it kills 0 more mutants

@@ -1,0 +1,92 @@
+{
+  "nbMutantKilledOriginally": 0,
+  "name": "org.xwiki.component.ProviderTest",
+  "nbOriginalTestCases": 2,
+  "nbNewMutantKilled": 12,
+  "testCases": [
+    {
+      "name": "loadAndInjectProviderWhenExceptionInInitialize_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 8,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 347,
+          "locationMethod": "createInstance"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 388,
+          "locationMethod": "getDependencyInstance"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 38,
+          "locationMethod": "handle"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 225,
+          "locationMethod": "getInstanceList"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 155,
+          "locationMethod": "initialize"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 197,
+          "locationMethod": "getInstance"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 234,
+          "locationMethod": "getInstanceMap"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 439,
+          "locationMethod": "getComponentInstance"
+        }
+      ]
+    },
+    {
+      "name": "loadAndInjectProviderWhenExceptionInInitializenull24",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 179,
+          "locationMethod": "hasComponent"
+        }
+      ]
+    },
+    {
+      "name": "loadAndInjectProviders_remove98_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 414,
+          "locationMethod": "createGenericProvider"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 74,
+          "locationMethod": "get"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 189,
+          "locationMethod": "getInstance"
+        }
+      ]
+    }
+  ]
+}

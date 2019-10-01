@@ -1,0 +1,136 @@
+{
+  "nbMutantKilledOriginally": 0,
+  "name": "org.xwiki.observation.DefaultObservationManagerTest",
+  "nbOriginalTestCases": 9,
+  "nbNewMutantKilled": 16,
+  "testCases": [
+    {
+      "name": "onComponentEventWhenRuntimeExceptionInListenerGetName",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 4,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 352,
+          "locationMethod": "onComponentEvent"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 383,
+          "locationMethod": "onEventListenerComponentAdded"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 283,
+          "locationMethod": "notify"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 131,
+          "locationMethod": "getListenersByEvent"
+        }
+      ]
+    },
+    {
+      "name": "registerListenerForTwoEventsOfSameType",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 113,
+          "locationMethod": "addEvent"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 315,
+          "locationMethod": "notify"
+        }
+      ]
+    },
+    {
+      "name": "removeEvent",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 121,
+          "locationMethod": "removeEvent"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 266,
+          "locationMethod": "removeEvent"
+        }
+      ]
+    },
+    {
+      "name": "registerSameListenerSeveralTimes",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 5,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 237,
+          "locationMethod": "removeListener"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 189,
+          "locationMethod": "addListenerInernal"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 144,
+          "locationMethod": "getListenersByName"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 158,
+          "locationMethod": "initializeListeners"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 180,
+          "locationMethod": "addListener"
+        }
+      ]
+    },
+    {
+      "name": "addEvent_add14",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 250,
+          "locationMethod": "addEvent"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 337,
+          "locationMethod": "notify"
+        }
+      ]
+    },
+    {
+      "name": "addEventWithNoInitialEvent_add165_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 276,
+          "locationMethod": "getListener"
+        }
+      ]
+    }
+  ]
+}

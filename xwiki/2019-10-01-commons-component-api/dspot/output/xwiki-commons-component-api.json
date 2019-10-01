@@ -1,0 +1,33 @@
+{
+  "classTimes": [
+    {
+      "fullQualifiedName": "org.xwiki.component.descriptor.DefaultComponentDescriptorTest",
+      "timeInMs": 49946
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.descriptor.DefaultComponentRoleTest",
+      "timeInMs": 5458
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.internal.namespace.DefaultNamespaceValidatorTest",
+      "timeInMs": 22283
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.internal.namespace.NamespaceUtilsTest",
+      "timeInMs": 23211
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.util.DefaultParameterizedTypeTest",
+      "timeInMs": 2501
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.util.ReflectionMethodUtilsTest",
+      "timeInMs": 11090
+    },
+    {
+      "fullQualifiedName": "org.xwiki.component.util.ReflectionUtilsTest",
+      "timeInMs": 68504
+    }
+  ],
+  "projectName": "xwiki-commons-component-api"
+}

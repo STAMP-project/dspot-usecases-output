@@ -1,0 +1,9 @@
+Test class that has been amplified: org.xwiki.observation.ObservationManagerEventListenerTest
+The original test suite kills 0 mutants
+The amplification results with 2 new tests
+it kills 7 more mutants
+
+Test class that has been amplified: org.xwiki.observation.DefaultObservationManagerTest
+The original test suite kills 0 mutants
+The amplification results with 6 new tests
+it kills 16 more mutants

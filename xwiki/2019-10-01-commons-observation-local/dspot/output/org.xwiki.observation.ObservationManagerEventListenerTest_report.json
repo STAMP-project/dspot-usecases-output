@@ -1,0 +1,59 @@
+{
+  "nbMutantKilledOriginally": 0,
+  "name": "org.xwiki.observation.ObservationManagerEventListenerTest",
+  "nbOriginalTestCases": 2,
+  "nbNewMutantKilled": 7,
+  "testCases": [
+    {
+      "name": "newListenerComponentnull4_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 276,
+          "locationMethod": "getListener"
+        }
+      ]
+    },
+    {
+      "name": "removedListenerComponent",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 6,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 352,
+          "locationMethod": "onComponentEvent"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 237,
+          "locationMethod": "removeListener"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 131,
+          "locationMethod": "getListenersByEvent"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 144,
+          "locationMethod": "getListenersByName"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 158,
+          "locationMethod": "initializeListeners"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 408,
+          "locationMethod": "onEventListenerComponentRemoved"
+        }
+      ]
+    }
+  ]
+}
