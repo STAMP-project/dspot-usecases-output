@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.monitoring.proxies.test.GooglePlayMonitorProxyTest",
+  "nbOriginalTestCases": 4,
+  "initialInstructionCovered": 584,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 1.8456481891157321,
+  "amplifiedInstructionCovered": 628,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 1.9847038745970547,
+  "testCases": []
+}
