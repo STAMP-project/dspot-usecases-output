@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.replan.controller.proxies.test.ReplanControllerProxyTest",
+  "nbOriginalTestCases": 40,
+  "initialInstructionCovered": 2754,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 8.703621768535491,
+  "amplifiedInstructionCovered": 2819,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 8.909044940269261,
+  "testCases": []
+}
