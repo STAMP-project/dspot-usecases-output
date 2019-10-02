@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.security.test.IFAuthenticationManagerTest",
+  "nbOriginalTestCases": 19,
+  "initialInstructionCovered": 1544,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 4.879590417799127,
+  "amplifiedInstructionCovered": 1570,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 4.961759686492637,
+  "testCases": []
+}
