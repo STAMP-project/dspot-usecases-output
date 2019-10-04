@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.federation.test.IFSupersedeFederationTest",
+  "nbOriginalTestCases": 2,
+  "initialInstructionCovered": 837,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 2.6452183806333354,
+  "amplifiedInstructionCovered": 837,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 2.6452183806333354,
+  "testCases": []
+}
