@@ -1,0 +1,11 @@
+{
+  "name": "eu.supersede.integration.api.tenants.test.IFTenantsManagerTest",
+  "nbOriginalTestCases": 2,
+  "initialInstructionCovered": 124,
+  "initialInstructionTotal": 31642,
+  "percentageinitialInstructionCovered": 0.3918842045382719,
+  "amplifiedInstructionCovered": 124,
+  "amplifiedInstructionTotal": 31642,
+  "percentageamplifiedInstructionCovered": 0.3918842045382719,
+  "testCases": []
+}
