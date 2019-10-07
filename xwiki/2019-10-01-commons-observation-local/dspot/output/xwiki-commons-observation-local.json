@@ -1,0 +1,13 @@
+{
+  "classTimes": [
+    {
+      "fullQualifiedName": "org.xwiki.observation.DefaultObservationManagerTest",
+      "timeInMs": 123802
+    },
+    {
+      "fullQualifiedName": "org.xwiki.observation.ObservationManagerEventListenerTest",
+      "timeInMs": 27174
+    }
+  ],
+  "projectName": "xwiki-commons-observation-local"
+}

@@ -1,0 +1,31 @@
+{
+  "nbMutantKilledOriginally": 0,
+  "name": "org.xwiki.component.internal.namespace.NamespaceUtilsTest",
+  "nbOriginalTestCases": 3,
+  "nbNewMutantKilled": 3,
+  "testCases": [
+    {
+      "name": "testEquals",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "\"A\"",
+          "lineNumber": 108,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 108,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 108,
+          "locationMethod": "serialize"
+        }
+      ]
+    }
+  ]
+}
