@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>eu.supersede.if.api 0.4.0-SNAPSHOT</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        eu.supersede.if.api 0.4.0-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li> <a href="dashboard.html"> Project Clover database Fri Oct 11 2019 15:36:46 CEST</a></li>
+</ol></div>
+    
+
+<h1 class="aui-h2-clover">
+                        
+            Project overview
+            </h1>
+<div class="aui-tabs horizontal-tabs">
+
+        <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+        
+        
+        
+        <table id="projectTestSummaryTable" class="aui">
+            <thead>
+                <tr>
+                    <th width="40%">Project</th>
+                    <th width="10%">Tests</th>
+                    <th width="10%">Fail</th>
+                    <th width="10%">Error</th>
+                    <th width="10%"><label title="The total time in seconds taken to run this set of tests.">Time</label></th>
+                    <th width="20%">% Pass</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clover database Fri Oct 11 2019 15:36:46 CEST</td>
+                    <td class="testPasses"><span class="sortValue">3011</span>3011</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+                    <td>1,567.051</td>
+                    <td>
+                        
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+                <table id="projectTestPackagesTable" class="aui aui-table-sortable">
+            <thead>
+                <tr>
+                    <th width="40%">Packages</th>
+                    <th width="10%">Tests</th>
+                    <th width="10%">Fail</th>
+                    <th width="10%">Error</th>
+                    <th width="10%"><label title="The total time in seconds taken to run this set of tests.">Time(secs)</label></th>
+                    <th width="20%">% Pass</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.datastore.integration.types</span><a href="eu/supersede/integration/api/datastore/integration/types/test-pkg-summary.html">eu.supersede.integration.api.datastore.integration.types</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.013</span>0.013</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.security</span><a href="eu/supersede/integration/api/security/test-pkg-summary.html">eu.supersede.integration.api.security</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.789</span>0.789</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.datastore.fe.types</span><a href="eu/supersede/integration/api/datastore/fe/types/test-pkg-summary.html">eu.supersede.integration.api.datastore.fe.types</a></td>
+        <td class="testPasses"><span class="sortValue">69</span>69</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.02</span>0.02</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.security.types</span><a href="eu/supersede/integration/api/security/types/test-pkg-summary.html">eu.supersede.integration.api.security.types</a></td>
+        <td class="testPasses"><span class="sortValue">113</span>113</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.34500000000000003</span>0.345</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.adaptation.dashboad.types</span><a href="eu/supersede/integration/api/adaptation/dashboad/types/test-pkg-summary.html">eu.supersede.integration.api.adaptation.dashboad.types</a></td>
+        <td class="testPasses"><span class="sortValue">45</span>45</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.024000000000000004</span>0.024</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.feedback.orchestrator.types.serialization</span><a href="eu/supersede/integration/api/feedback/orchestrator/types/serialization/test-pkg-summary.html">eu.supersede.integration.api.feedback.orchestrator.types.serialization</a></td>
+        <td class="testPasses"><span class="sortValue">33</span>33</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">2.2459999999999996</span>2.246</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.feedback.types</span><a href="eu/supersede/integration/api/feedback/types/test-pkg-summary.html">eu.supersede.integration.api.feedback.types</a></td>
+        <td class="testPasses"><span class="sortValue">28</span>28</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.17400000000000002</span>0.174</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.feedback.repository.types</span><a href="eu/supersede/integration/api/feedback/repository/types/test-pkg-summary.html">eu.supersede.integration.api.feedback.repository.types</a></td>
+        <td class="testPasses"><span class="sortValue">336</span>336</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.3590000000000001</span>0.359</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.adaptation.types</span><a href="eu/supersede/integration/api/adaptation/types/test-pkg-summary.html">eu.supersede.integration.api.adaptation.types</a></td>
+        <td class="testPasses"><span class="sortValue">174</span>174</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.09100000000000001</span>0.091</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.dm.types</span><a href="eu/supersede/integration/api/dm/types/test-pkg-summary.html">eu.supersede.integration.api.dm.types</a></td>
+        <td class="testPasses"><span class="sortValue">67</span>67</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.07400000000000001</span>0.074</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.replan.optimizer_v2.types</span><a href="eu/supersede/integration/api/replan/optimizer_v2/types/test-pkg-summary.html">eu.supersede.integration.api.replan.optimizer_v2.types</a></td>
+        <td class="testPasses"><span class="sortValue">95</span>95</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.031000000000000007</span>0.031</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.datastore.util</span><a href="eu/supersede/integration/api/datastore/util/test-pkg-summary.html">eu.supersede.integration.api.datastore.util</a></td>
+        <td class="testPasses"><span class="sortValue">23</span>23</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.01</span>0.01</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.monitoring.orchestrator.types</span><a href="eu/supersede/integration/api/monitoring/orchestrator/types/test-pkg-summary.html">eu.supersede.integration.api.monitoring.orchestrator.types</a></td>
+        <td class="testPasses"><span class="sortValue">72</span>72</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.008</span>0.008</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.mail.types</span><a href="eu/supersede/integration/api/mail/types/test-pkg-summary.html">eu.supersede.integration.api.mail.types</a></td>
+        <td class="testPasses"><span class="sortValue">25</span>25</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.498</span>0.498</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.mdm.types</span><a href="eu/supersede/integration/api/mdm/types/test-pkg-summary.html">eu.supersede.integration.api.mdm.types</a></td>
+        <td class="testPasses"><span class="sortValue">177</span>177</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.537</span>0.537</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.replan.optimizer.types</span><a href="eu/supersede/integration/api/replan/optimizer/types/test-pkg-summary.html">eu.supersede.integration.api.replan.optimizer.types</a></td>
+        <td class="testPasses"><span class="sortValue">94</span>94</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.026000000000000002</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.monitoring.manager.types</span><a href="eu/supersede/integration/api/monitoring/manager/types/test-pkg-summary.html">eu.supersede.integration.api.monitoring.manager.types</a></td>
+        <td class="testPasses"><span class="sortValue">79</span>79</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.052000000000000005</span>0.052</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.analysis.types</span><a href="eu/supersede/integration/api/analysis/types/test-pkg-summary.html">eu.supersede.integration.api.analysis.types</a></td>
+        <td class="testPasses"><span class="sortValue">37</span>37</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.14400000000000002</span>0.144</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.replan.controller.types</span><a href="eu/supersede/integration/api/replan/controller/types/test-pkg-summary.html">eu.supersede.integration.api.replan.controller.types</a></td>
+        <td class="testPasses"><span class="sortValue">153</span>153</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.07300000000000001</span>0.073</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.feedback.orchestrator.types</span><a href="eu/supersede/integration/api/feedback/orchestrator/types/test-pkg-summary.html">eu.supersede.integration.api.feedback.orchestrator.types</a></td>
+        <td class="testPasses"><span class="sortValue">512</span>512</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">1.234</span>1.234</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.security.test</span><a href="eu/supersede/integration/api/security/test/test-pkg-summary.html">eu.supersede.integration.api.security.test</a></td>
+        <td class="testPasses"><span class="sortValue">14</span>14</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">10.046999999999999</span>10.047</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.mdm.proxies.test</span><a href="eu/supersede/integration/api/mdm/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.mdm.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">22</span>22</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">66.555</span>66.555</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.federation.test</span><a href="eu/supersede/integration/federation/test/test-pkg-summary.html">eu.supersede.integration.federation.test</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.02</span>0.02</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.feedback.proxies.test</span><a href="eu/supersede/integration/api/feedback/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.feedback.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">223</span>223</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">418.0630000000002</span>418.063</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.replan.controller.proxies.test</span><a href="eu/supersede/integration/api/replan/controller/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.replan.controller.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">52</span>52</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">16.08</span>16.08</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.adaptation.proxies.test</span><a href="eu/supersede/integration/api/adaptation/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.adaptation.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">218</span>218</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">977.0340000000001</span>977.034</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.analysis.proxies.test</span><a href="eu/supersede/integration/api/analysis/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.analysis.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.datastore.proxies.test</span><a href="eu/supersede/integration/api/datastore/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.datastore.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">1.065</span>1.065</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.monitoring.proxies.test</span><a href="eu/supersede/integration/api/monitoring/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.monitoring.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">131</span>131</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">5.087</span>5.087</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.fe.test</span><a href="eu/supersede/integration/api/fe/test/test-pkg-summary.html">eu.supersede.integration.api.fe.test</a></td>
+        <td class="testPasses"><span class="sortValue">22</span>22</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">9.759</span>9.759</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.replan.optimizer.proxies.test</span><a href="eu/supersede/integration/api/replan/optimizer/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.replan.optimizer.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">28</span>28</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">15.806999999999999</span>15.807</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.adaptation.dashboard.proxies.test</span><a href="eu/supersede/integration/api/adaptation/dashboard/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.adaptation.dashboard.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">111</span>111</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">3.581</span>3.581</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.pubsub.test</span><a href="eu/supersede/integration/api/pubsub/test/test-pkg-summary.html">eu.supersede.integration.api.pubsub.test</a></td>
+        <td class="testPasses"><span class="sortValue">20</span>20</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">33.099</span>33.099</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.tenants.test</span><a href="eu/supersede/integration/api/tenants/test/test-pkg-summary.html">eu.supersede.integration.api.tenants.test</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.469</span>0.469</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">eu.supersede.integration.api.dm.proxies.test</span><a href="eu/supersede/integration/api/dm/proxies/test/test-pkg-summary.html">eu.supersede.integration.api.dm.proxies.test</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">3.6350000000000002</span>3.635</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+               </tbody>
+        </table>
+
+    </div> 
+</div> 
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.0
+                on Fri Oct 11 2019 16:08:02 CEST using coverage data from Fri Oct 11 2019 16:07:14 CEST.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

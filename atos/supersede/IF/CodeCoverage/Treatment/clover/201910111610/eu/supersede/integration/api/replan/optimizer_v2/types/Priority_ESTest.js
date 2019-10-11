@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":81,"id":56386,"methods":[{"el":19,"sc":3,"sl":14},{"el":26,"sc":3,"sl":21},{"el":35,"sc":3,"sl":28},{"el":44,"sc":3,"sl":37},{"el":53,"sc":3,"sl":46},{"el":62,"sc":3,"sl":55},{"el":71,"sc":3,"sl":64},{"el":80,"sc":3,"sl":73}],"name":"Priority_ESTest","sl":12}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1094":{"methods":[{"sl":55}],"name":"test5","pass":true,"statements":[{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61}]},"test_1320":{"methods":[{"sl":46}],"name":"test4","pass":true,"statements":[{"sl":48},{"sl":49},{"sl":50},{"sl":51},{"sl":52}]},"test_2533":{"methods":[{"sl":21}],"name":"test1","pass":true,"statements":[{"sl":23},{"sl":24},{"sl":25}]},"test_271":{"methods":[{"sl":28}],"name":"test2","pass":true,"statements":[{"sl":30},{"sl":31},{"sl":32},{"sl":33},{"sl":34}]},"test_2888":{"methods":[{"sl":64}],"name":"test6","pass":true,"statements":[{"sl":66},{"sl":67},{"sl":68},{"sl":69},{"sl":70}]},"test_614":{"methods":[{"sl":14}],"name":"test0","pass":true,"statements":[{"sl":16},{"sl":17},{"sl":18}]},"test_807":{"methods":[{"sl":37}],"name":"test3","pass":true,"statements":[{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43}]},"test_967":{"methods":[{"sl":73}],"name":"test7","pass":true,"statements":[{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":79}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [614], [], [614], [614], [614], [], [], [2533], [], [2533], [2533], [2533], [], [], [271], [], [271], [271], [271], [271], [271], [], [], [807], [], [807], [807], [807], [807], [807], [], [], [1320], [], [1320], [1320], [1320], [1320], [1320], [], [], [1094], [], [1094], [1094], [1094], [1094], [1094], [], [], [2888], [], [2888], [2888], [2888], [2888], [2888], [], [], [967], [], [967], [967], [967], [967], [967], [], []]
