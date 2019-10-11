@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":83,"id":10045,"methods":[{"el":24,"sc":3,"sl":16},{"el":30,"sc":3,"sl":26},{"el":36,"sc":3,"sl":32},{"el":46,"sc":3,"sl":38},{"el":56,"sc":3,"sl":48},{"el":63,"sc":3,"sl":58},{"el":73,"sc":3,"sl":65},{"el":82,"sc":3,"sl":75}],"name":"Condition_ESTest","sl":14}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1219":{"methods":[{"sl":48}],"name":"test4","pass":true,"statements":[{"sl":50},{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55}]},"test_1401":{"methods":[{"sl":32}],"name":"test2","pass":true,"statements":[{"sl":34},{"sl":35}]},"test_1473":{"methods":[{"sl":75}],"name":"test7","pass":true,"statements":[{"sl":77},{"sl":78},{"sl":79},{"sl":80},{"sl":81}]},"test_1579":{"methods":[{"sl":16}],"name":"test0","pass":true,"statements":[{"sl":18},{"sl":19},{"sl":20},{"sl":21},{"sl":22},{"sl":23}]},"test_2129":{"methods":[{"sl":26}],"name":"test1","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_422":{"methods":[{"sl":58}],"name":"test5","pass":true,"statements":[{"sl":60},{"sl":61},{"sl":62}]},"test_573":{"methods":[{"sl":38}],"name":"test3","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":45}]},"test_81":{"methods":[{"sl":65}],"name":"test6","pass":true,"statements":[{"sl":67},{"sl":68},{"sl":69},{"sl":70},{"sl":71},{"sl":72}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1579], [], [1579], [1579], [1579], [1579], [1579], [1579], [], [], [2129], [], [2129], [2129], [], [], [1401], [], [1401], [1401], [], [], [573], [], [573], [573], [573], [573], [573], [573], [], [], [1219], [], [1219], [1219], [1219], [1219], [1219], [1219], [], [], [422], [], [422], [422], [422], [], [], [81], [], [81], [81], [81], [81], [81], [81], [], [], [1473], [], [1473], [1473], [1473], [1473], [1473], [], []]

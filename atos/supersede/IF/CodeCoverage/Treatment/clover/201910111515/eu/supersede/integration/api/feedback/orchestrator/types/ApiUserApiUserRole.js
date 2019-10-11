@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":45,"id":1329,"methods":[{"el":15,"sc":5,"sl":14},{"el":20,"sc":5,"sl":17},{"el":24,"sc":5,"sl":22},{"el":28,"sc":5,"sl":26},{"el":40,"sc":5,"sl":38},{"el":44,"sc":5,"sl":42}],"name":"ApiUserApiUserRole","sl":6}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1104":{"methods":[{"sl":17}],"name":"testGetAPIUsers","pass":true,"statements":[{"sl":18},{"sl":19}]},"test_1276":{"methods":[{"sl":14},{"sl":22}],"name":"test2","pass":true,"statements":[{"sl":23}]},"test_1290":{"methods":[{"sl":17}],"name":"test34","pass":true,"statements":[{"sl":18},{"sl":19}]},"test_1454":{"methods":[{"sl":14},{"sl":22},{"sl":26}],"name":"test6","pass":true,"statements":[{"sl":23},{"sl":27}]},"test_307":{"methods":[{"sl":14},{"sl":38},{"sl":42}],"name":"test0","pass":true,"statements":[{"sl":39},{"sl":43}]},"test_637":{"methods":[{"sl":17}],"name":"test3","pass":true,"statements":[{"sl":18}]},"test_722":{"methods":[{"sl":17},{"sl":38}],"name":"test1","pass":true,"statements":[{"sl":18},{"sl":19},{"sl":39}]},"test_80":{"methods":[{"sl":14},{"sl":22},{"sl":26}],"name":"test5","pass":true,"statements":[{"sl":23},{"sl":27}]},"test_820":{"methods":[{"sl":14},{"sl":38}],"name":"test4","pass":true,"statements":[{"sl":39}]},"test_91":{"methods":[{"sl":14}],"name":"test24","pass":true,"statements":[]},"test_936":{"methods":[{"sl":17}],"name":"testGetAPIUser","pass":true,"statements":[{"sl":18},{"sl":19}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [1454, 820, 80, 307, 91, 1276], [], [], [1290, 936, 637, 722, 1104], [1290, 936, 637, 722, 1104], [1290, 936, 722, 1104], [], [], [1454, 80, 1276], [1454, 80, 1276], [], [], [1454, 80], [1454, 80], [], [], [], [], [], [], [], [], [], [], [820, 722, 307], [820, 722, 307], [], [], [307], [307], [], []]

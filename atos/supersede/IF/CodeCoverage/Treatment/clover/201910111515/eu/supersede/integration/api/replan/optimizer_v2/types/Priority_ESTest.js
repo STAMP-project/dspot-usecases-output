@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":81,"id":22560,"methods":[{"el":19,"sc":3,"sl":14},{"el":26,"sc":3,"sl":21},{"el":35,"sc":3,"sl":28},{"el":44,"sc":3,"sl":37},{"el":53,"sc":3,"sl":46},{"el":62,"sc":3,"sl":55},{"el":71,"sc":3,"sl":64},{"el":80,"sc":3,"sl":73}],"name":"Priority_ESTest","sl":12}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1544":{"methods":[{"sl":21}],"name":"test1","pass":true,"statements":[{"sl":23},{"sl":24},{"sl":25}]},"test_1614":{"methods":[{"sl":28}],"name":"test2","pass":true,"statements":[{"sl":30},{"sl":31},{"sl":32},{"sl":33},{"sl":34}]},"test_1855":{"methods":[{"sl":73}],"name":"test7","pass":true,"statements":[{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":79}]},"test_2010":{"methods":[{"sl":37}],"name":"test3","pass":true,"statements":[{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43}]},"test_2090":{"methods":[{"sl":14}],"name":"test0","pass":true,"statements":[{"sl":16},{"sl":17},{"sl":18}]},"test_2179":{"methods":[{"sl":55}],"name":"test5","pass":true,"statements":[{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61}]},"test_543":{"methods":[{"sl":46}],"name":"test4","pass":true,"statements":[{"sl":48},{"sl":49},{"sl":50},{"sl":51},{"sl":52}]},"test_932":{"methods":[{"sl":64}],"name":"test6","pass":true,"statements":[{"sl":66},{"sl":67},{"sl":68},{"sl":69},{"sl":70}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [2090], [], [2090], [2090], [2090], [], [], [1544], [], [1544], [1544], [1544], [], [], [1614], [], [1614], [1614], [1614], [1614], [1614], [], [], [2010], [], [2010], [2010], [2010], [2010], [2010], [], [], [543], [], [543], [543], [543], [543], [543], [], [], [2179], [], [2179], [2179], [2179], [2179], [2179], [], [], [932], [], [932], [932], [932], [932], [932], [], [], [1855], [], [1855], [1855], [1855], [1855], [1855], [], []]
