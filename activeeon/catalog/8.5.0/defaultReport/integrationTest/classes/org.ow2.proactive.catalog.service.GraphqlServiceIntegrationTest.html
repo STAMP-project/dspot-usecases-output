@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.ow2.proactive.catalog.service.GraphqlServiceIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.ow2.proactive.catalog.service.GraphqlServiceIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.ow2.proactive.catalog.service.html">org.ow2.proactive.catalog.service</a> &gt; GraphqlServiceIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.808s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBucketIdQuery</td>
+<td>0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBucketNameLikeQuery</td>
+<td>0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testComplexAndQuery</td>
+<td>0.121s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAllCatalogObjects</td>
+<td>0.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testKindQuery</td>
+<td>0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMetadataQuery</td>
+<td>0.110s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNameQuery</td>
+<td>0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPageInfoQuery</td>
+<td>0.173s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleAndQuery</td>
+<td>0.081s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select count(catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME where catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME where catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME offset ? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where catalogobj1_.NAME=? and catalogobj1_.KIND=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where catalogobj1_.NAME=? and catalogobj1_.KIND=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE&lt;&gt;?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE&lt;&gt;? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and (keyvalueme2_.PA_VALUE like ?)
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where keyvalueme2_.PA_KEY=? and (keyvalueme2_.PA_VALUE like ?) limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where catalogobj1_.NAME=? and catalogobj1_.KIND=? and keyvalueme2_.PA_KEY=? and (keyvalueme2_.PA_VALUE like ?) or catalogobj1_.KIND=? and keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join METADATA_KEY_VALUE keyvalueme2_ on catalogobj0_.ID=keyvalueme2_.CATALOGOBJECTREVISION where catalogobj1_.NAME=? and catalogobj1_.KIND=? and keyvalueme2_.PA_KEY=? and (keyvalueme2_.PA_VALUE like ?) or catalogobj1_.KIND=? and keyvalueme2_.PA_KEY=? and keyvalueme2_.PA_VALUE=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID inner join METADATA_KEY_VALUE keyvalueme3_ on catalogobj0_.ID=keyvalueme3_.CATALOGOBJECTREVISION where (catalogobj1_.NAME=? or catalogobj1_.NAME=?) and bucketenti2_.BUCKET_NAME=? or catalogobj1_.NAME=? and bucketenti2_.BUCKET_NAME=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID inner join METADATA_KEY_VALUE keyvalueme3_ on catalogobj0_.ID=keyvalueme3_.CATALOGOBJECTREVISION where (catalogobj1_.NAME=? or catalogobj1_.NAME=?) and bucketenti2_.BUCKET_NAME=? or catalogobj1_.NAME=? and bucketenti2_.BUCKET_NAME=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID in (?, ?)
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select count(catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME where catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME where catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND&lt;&gt;?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND&lt;&gt;? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND like ?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.KIND like ? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME like ?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME like ? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) inner join BUCKET bucketenti2_ on catalogobj1_.BUCKET_ID=bucketenti2_.ID where bucketenti2_.BUCKET_NAME=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where ((catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?) or (catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?))
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+Hibernate: call next value for BUCKET_SEQUENCE
+Hibernate: insert into BUCKET (BUCKET_NAME, OWNER, ID) values (?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where revisions0_.BUCKET=? and revisions0_.NAME=? order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: update CATALOG_OBJECT set CONTENT_TYPE=?, EXTENSION=?, KIND=?, LAST_COMMIT_TIME=? where BUCKET_ID=? and NAME=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_ where bucketenti0_.BUCKET_NAME=?
+Hibernate: select catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ cross join CATALOG_OBJECT catalogobj1_ cross join BUCKET bucketenti2_ where catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and catalogobj1_.BUCKET_ID=bucketenti2_.ID and (bucketenti2_.BUCKET_NAME in (?)) and catalogobj0_.NAME=? and catalogobj1_.LAST_COMMIT_TIME=catalogobj0_.COMMIT_TIME
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: call next value for CATALOG_OBJECT_REVISION_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: call next value for METADATA_KEY_VALUE_SEQUENCE
+Hibernate: insert into CATALOG_OBJECT (CONTENT_TYPE, EXTENSION, KIND, LAST_COMMIT_TIME, BUCKET_ID, NAME) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into CATALOG_OBJECT_REVISION (BUCKET, NAME, COMMIT_MESSAGE, COMMIT_TIME, RAW_OBJECT, ID) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: insert into METADATA_KEY_VALUE (CATALOGOBJECTREVISION, PA_KEY, LABEL, PA_VALUE, ID) values (?, ?, ?, ?, ?)
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.NAME=?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.NAME=? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select distinct count(distinct catalogobj0_.ID) as col_0_0_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.NAME like ?
+Hibernate: select distinct catalogobj0_.ID as ID1_2_, catalogobj0_.BUCKET as BUCKET5_2_, catalogobj0_.NAME as NAME6_2_, catalogobj0_.COMMIT_MESSAGE as COMMIT_M2_2_, catalogobj0_.COMMIT_TIME as COMMIT_T3_2_, catalogobj0_.RAW_OBJECT as RAW_OBJE4_2_ from CATALOG_OBJECT_REVISION catalogobj0_ inner join CATALOG_OBJECT catalogobj1_ on catalogobj0_.BUCKET=catalogobj1_.BUCKET_ID and catalogobj0_.NAME=catalogobj1_.NAME and (catalogobj0_.COMMIT_TIME=catalogobj1_.LAST_COMMIT_TIME) where catalogobj1_.NAME like ? limit ?
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=? and catalogobj0_.NAME=?
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION=?
+Hibernate: select bucketenti0_.ID as ID1_0_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_0_, bucketenti0_.OWNER as OWNER3_0_0_ from BUCKET bucketenti0_ where bucketenti0_.ID=?
+Hibernate: select bucketenti0_.ID as ID1_0_, bucketenti0_.BUCKET_NAME as BUCKET_N2_0_, bucketenti0_.OWNER as OWNER3_0_ from BUCKET bucketenti0_
+Hibernate: select catalogobj0_.BUCKET_ID as BUCKET_I1_1_1_, catalogobj0_.NAME as NAME2_1_1_, catalogobj0_.BUCKET_ID as BUCKET_I1_1_0_, catalogobj0_.NAME as NAME2_1_0_, catalogobj0_.CONTENT_TYPE as CONTENT_3_1_0_, catalogobj0_.EXTENSION as EXTENSIO4_1_0_, catalogobj0_.KIND as KIND5_1_0_, catalogobj0_.LAST_COMMIT_TIME as LAST_COM6_1_0_ from CATALOG_OBJECT catalogobj0_ where catalogobj0_.BUCKET_ID=?
+Hibernate: select revisions0_.BUCKET as BUCKET5_2_1_, revisions0_.NAME as NAME6_2_1_, revisions0_.ID as ID1_2_1_, revisions0_.ID as ID1_2_0_, revisions0_.BUCKET as BUCKET5_2_0_, revisions0_.NAME as NAME6_2_0_, revisions0_.COMMIT_MESSAGE as COMMIT_M2_2_0_, revisions0_.COMMIT_TIME as COMMIT_T3_2_0_, revisions0_.RAW_OBJECT as RAW_OBJE4_2_0_ from CATALOG_OBJECT_REVISION revisions0_ where ((revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?) or (revisions0_.BUCKET=? and revisions0_.NAME=?)) order by revisions0_.COMMIT_TIME desc
+Hibernate: select keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_1_, keyvalueme0_.ID as ID1_3_1_, keyvalueme0_.ID as ID1_3_0_, keyvalueme0_.CATALOGOBJECTREVISION as CATALOGO5_3_0_, keyvalueme0_.PA_KEY as PA_KEY2_3_0_, keyvalueme0_.LABEL as LABEL3_3_0_, keyvalueme0_.PA_VALUE as PA_VALUE4_3_0_ from METADATA_KEY_VALUE keyvalueme0_ where keyvalueme0_.CATALOGOBJECTREVISION in (?, ?, ?, ?, ?)
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from METADATA_KEY_VALUE where ID=?
+Hibernate: delete from CATALOG_OBJECT_REVISION where ID=?
+Hibernate: delete from CATALOG_OBJECT where BUCKET_ID=? and NAME=?
+Hibernate: delete from BUCKET where ID=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.10</a> at Oct 14, 2019 4:20:34 PM</p>
+</div>
+</div>
+</body>
+</html>
