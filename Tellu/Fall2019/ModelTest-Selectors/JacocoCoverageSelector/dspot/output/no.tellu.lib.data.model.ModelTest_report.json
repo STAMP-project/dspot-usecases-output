@@ -1,0 +1,11 @@
+{
+  "name": "no.tellu.lib.data.model.ModelTest",
+  "nbOriginalTestCases": 13,
+  "initialInstructionCovered": 317,
+  "initialInstructionTotal": 22392,
+  "percentageinitialInstructionCovered": 1.4156841729188996,
+  "amplifiedInstructionCovered": 317,
+  "amplifiedInstructionTotal": 22392,
+  "percentageamplifiedInstructionCovered": 1.4156841729188996,
+  "testCases": []
+}
