@@ -1,0 +1,166 @@
+{
+  "nbMutantKilledOriginally": 117,
+  "name": "no.tellu.lib.data.model.ModelTest",
+  "nbOriginalTestCases": 12,
+  "nbNewMutantKilled": 22,
+  "testCases": [
+    {
+      "name": "testSubscribers_remove717",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 404,
+          "locationMethod": "getOutputStream"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 432,
+          "locationMethod": "persistAll"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        }
+      ]
+    },
+    {
+      "name": "testSubscribers_remove705",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 464,
+          "locationMethod": "writeArray"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 63,
+          "locationMethod": "enterGroup"
+        }
+      ]
+    },
+    {
+      "name": "testSubscribers_remove718_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 6,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 454,
+          "locationMethod": "error"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 23,
+          "locationMethod": "log"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 356,
+          "locationMethod": "debug"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 373,
+          "locationMethod": "info"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 390,
+          "locationMethod": "info"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 100,
+          "locationMethod": "setIncludeMeta"
+        }
+      ]
+    },
+    {
+      "name": "testSubscribers_remove722",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 201,
+          "locationMethod": "isDebug"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 339,
+          "locationMethod": "debug"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 201,
+          "locationMethod": "isDebug"
+        }
+      ]
+    },
+    {
+      "name": "testSubscribers_remove701",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 7,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 149,
+          "locationMethod": "addLogOutput"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 160,
+          "locationMethod": "addLogger"
+        },
+        {
+          "ID": "0",
+          "lineNumber": 96,
+          "locationMethod": "getLogLevel"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 83,
+          "locationMethod": "setLogLevel"
+        },
+        {
+          "ID": "1",
+          "lineNumber": 96,
+          "locationMethod": "getLogLevel"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 67,
+          "locationMethod": "canOutput"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 67,
+          "locationMethod": "canOutput"
+        }
+      ]
+    }
+  ]
+}

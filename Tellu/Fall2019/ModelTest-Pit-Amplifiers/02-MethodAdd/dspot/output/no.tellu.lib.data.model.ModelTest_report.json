@@ -1,0 +1,52 @@
+{
+  "nbMutantKilledOriginally": 117,
+  "name": "no.tellu.lib.data.model.ModelTest",
+  "nbOriginalTestCases": 12,
+  "nbNewMutantKilled": 4,
+  "testCases": [
+    {
+      "name": "testSubscribers_add18629_add19601",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromFile_add112",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        }
+      ]
+    }
+  ]
+}
