@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":102,"id":8126,"methods":[{"el":23,"sc":2,"sl":16},{"el":45,"sc":2,"sl":25},{"el":56,"sc":2,"sl":47},{"el":70,"sc":2,"sl":58},{"el":88,"sc":2,"sl":72},{"el":101,"sc":2,"sl":90}],"name":"DataPathTest","sl":14}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_18":{"methods":[{"sl":16}],"name":"testRelativePath","pass":true,"statements":[{"sl":18},{"sl":19},{"sl":20},{"sl":21},{"sl":22}]},"test_35":{"methods":[{"sl":90}],"name":"testState","pass":true,"statements":[{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":97},{"sl":98},{"sl":99},{"sl":100}]},"test_39":{"methods":[{"sl":25}],"name":"testAbsolutePath","pass":true,"statements":[{"sl":27},{"sl":28},{"sl":29},{"sl":30},{"sl":31},{"sl":33},{"sl":34},{"sl":35},{"sl":36},{"sl":37},{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":44}]},"test_4":{"methods":[{"sl":58}],"name":"testParentPath","pass":true,"statements":[{"sl":60},{"sl":61},{"sl":63},{"sl":64},{"sl":66},{"sl":67},{"sl":68},{"sl":69}]},"test_44":{"methods":[{"sl":72}],"name":"testPredicates","pass":true,"statements":[{"sl":74},{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":80},{"sl":81},{"sl":82},{"sl":83},{"sl":84},{"sl":86},{"sl":87}]},"test_73":{"methods":[{"sl":47}],"name":"testRemainingString","pass":true,"statements":[{"sl":49},{"sl":50},{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [18], [], [18], [18], [18], [18], [18], [], [], [39], [], [39], [39], [39], [39], [39], [], [39], [39], [39], [39], [39], [], [39], [39], [39], [39], [39], [39], [], [], [73], [], [73], [73], [73], [73], [73], [73], [73], [], [], [4], [], [4], [4], [], [4], [4], [], [4], [4], [4], [4], [], [], [44], [], [44], [44], [44], [44], [44], [], [44], [44], [44], [44], [44], [], [44], [44], [], [], [35], [], [35], [35], [35], [35], [35], [35], [35], [35], [35], [], []]
