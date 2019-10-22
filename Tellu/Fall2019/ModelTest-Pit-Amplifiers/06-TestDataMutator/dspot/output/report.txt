@@ -1,0 +1,4 @@
+Test class that has been amplified: no.tellu.lib.data.model.ModelTest
+The original test suite kills 379 mutants
+The amplification results with 1 new tests
+it kills 2 more mutants

@@ -1,0 +1,168 @@
+{
+  "nbMutantKilledOriginally": 117,
+  "name": "no.tellu.lib.data.model.ModelTest",
+  "nbOriginalTestCases": 12,
+  "nbNewMutantKilled": 16,
+  "testCases": [
+    {
+      "name": "testInitFromModel_mg8122_mg8434_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 651,
+          "locationMethod": "copyMetaData"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromFile_mg6903",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg8121_mg8234_failAssert0_mg12004_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 4,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 23,
+          "locationMethod": "log"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 108,
+          "locationMethod": "close"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 100,
+          "locationMethod": "setIncludeMeta"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 373,
+          "locationMethod": "info"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg8117_mg8480_mg12247",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg8118",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 1186,
+          "locationMethod": "hasDataProvider"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromFile_mg6903_mg6951_mg7303",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 145,
+          "locationMethod": "equals"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg8121_mg8234_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 454,
+          "locationMethod": "error"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromFile_mg6903_mg6945",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg8117_mg8493_mg11253_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 426,
+          "locationMethod": "removeValue"
+        }
+      ]
+    }
+  ]
+}
