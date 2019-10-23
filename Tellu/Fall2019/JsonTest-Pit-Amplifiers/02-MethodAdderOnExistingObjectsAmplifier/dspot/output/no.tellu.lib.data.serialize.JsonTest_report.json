@@ -1,0 +1,49 @@
+{
+  "nbMutantKilledOriginally": 17,
+  "name": "no.tellu.lib.data.serialize.JsonTest",
+  "nbOriginalTestCases": 3,
+  "nbNewMutantKilled": 5,
+  "testCases": [
+    {
+      "name": "testJsonException_mg8277_mg8300",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    },
+    {
+      "name": "testJsonException_mg8277",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "\"\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        }
+      ]
+    }
+  ]
+}

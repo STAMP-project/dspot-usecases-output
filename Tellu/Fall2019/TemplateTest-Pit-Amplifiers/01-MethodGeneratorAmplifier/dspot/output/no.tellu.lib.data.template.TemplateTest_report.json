@@ -1,0 +1,26 @@
+{
+  "nbMutantKilledOriginally": 14,
+  "name": "no.tellu.lib.data.template.TemplateTest",
+  "nbOriginalTestCases": 5,
+  "nbNewMutantKilled": 2,
+  "testCases": [
+    {
+      "name": "TemplateTest",
+      "nbAssertionAdded": 60,
+      "nbInputAdded": 7288,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    }
+  ]
+}

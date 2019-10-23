@@ -1,0 +1,36 @@
+{
+  "nbMutantKilledOriginally": 14,
+  "name": "no.tellu.lib.data.template.TemplateTest",
+  "nbOriginalTestCases": 5,
+  "nbNewMutantKilled": 4,
+  "testCases": [
+    {
+      "name": "TemplateTest",
+      "nbAssertionAdded": 47,
+      "nbInputAdded": 10687,
+      "nbMutantKilled": 4,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 349,
+          "locationMethod": "equalsValue"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    }
+  ]
+}
