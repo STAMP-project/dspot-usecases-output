@@ -1,0 +1,101 @@
+{
+  "nbMutantKilledOriginally": 117,
+  "name": "no.tellu.lib.data.model.ModelTest",
+  "nbOriginalTestCases": 12,
+  "nbNewMutantKilled": 9,
+  "testCases": [
+    {
+      "name": "testInitFromFile_mg14589_mg14735",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 375,
+          "locationMethod": "hasOpenTransaction"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg19474_mg21216_mg29579_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 426,
+          "locationMethod": "removeValue"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg19469",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 1186,
+          "locationMethod": "hasDataProvider"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromFile_mg14589",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 3,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 159,
+          "locationMethod": "serialize"
+        }
+      ]
+    },
+    {
+      "name": "testInitFromModel_mg19467_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 651,
+          "locationMethod": "copyMetaData"
+        }
+      ]
+    }
+  ]
+}
