@@ -1,0 +1,13 @@
+{
+  "classTimes": [
+    {
+      "fullQualifiedName": "no.tellu.lib.data.BooleanOpTest",
+      "timeInMs": 165887
+    },
+    {
+      "fullQualifiedName": "no.tellu.lib.data.DataHandleTest",
+      "timeInMs": 17089322
+    }
+  ],
+  "projectName": "tellulib"
+}
