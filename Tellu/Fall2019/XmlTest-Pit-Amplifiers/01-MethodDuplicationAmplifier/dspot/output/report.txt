@@ -1,0 +1,4 @@
+Test class that has been amplified: no.tellu.lib.data.serialize.XmlTest
+The original test suite kills 380 mutants
+The amplification results with 2 new tests
+it kills 3 more mutants

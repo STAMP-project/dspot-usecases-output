@@ -1,0 +1,39 @@
+{
+  "nbMutantKilledOriginally": 8,
+  "name": "no.tellu.lib.data.serialize.XmlTest",
+  "nbOriginalTestCases": 1,
+  "nbNewMutantKilled": 3,
+  "testCases": [
+    {
+      "name": "testXmlSerializer_add8",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 110,
+          "locationMethod": "getHandle"
+        }
+      ]
+    },
+    {
+      "name": "testXmlSerializer_add5",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "true",
+          "lineNumber": 119,
+          "locationMethod": "isValueNode"
+        }
+      ]
+    }
+  ]
+}
