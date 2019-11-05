@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>MetaGroupNode.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package no.tellu.lib.data;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Iterator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * MetaNode corresponding to DataGroupNode. As a meta node</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * for a group data node, it has only a name, cardinality and</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * readOnly specification for itself, but it has a list of</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * child MetaNodes to specify its contents. It also has a flag</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * for whether or not the DataGroupNode can have children not</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * specified by MetaNodes. Such unknown content is allowed by</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * default. Default cardinality, if not set with constructor,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * is CARD_ONE, specifying there must be exactly one</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * DataGroupNode corresponding to this meta.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * @author Lars Thomas Boye, Tellu AS</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class MetaGroupNode extends MetaNode implements Iterable&#60;MetaNode&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;List&#60;MetaNode&#62; childNodes;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;final boolean allowUnknown;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Name-only constructor, setting defaults for other attributes.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param name&#9;name of node, to match a DataNode name</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaGroupNode(String name) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;super(name, CARD_ONE, false);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;childNodes = new ArrayList&#60;MetaNode&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;allowUnknown = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Constructor with name and cardinality.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param name&#9;&#9;&#9;name of node, to match a DataNode name</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param cardinality&#9;one of the CARD_* constants</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaGroupNode(String name, int cardinality) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;super(name, cardinality, false);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;childNodes = new ArrayList&#60;MetaNode&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;allowUnknown = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Full constructor, with all attributes.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param name&#9;&#9;&#9;name of node, to match a DataNode name</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param cardinality&#9;one of the CARD_* constants</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param readOnly&#9;&#9;true if data can&#39;t be modified by external code</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param allowUnknown&#9;false to require all content have meta</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaGroupNode(String name, int cardinality, boolean readOnly, boolean allowUnknown) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;super(name, cardinality, readOnly);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;childNodes = new ArrayList&#60;MetaNode&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.allowUnknown = allowUnknown;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return&#9;true if the group node can have children without meta</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public boolean isAllowUnknown() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return allowUnknown;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Iterator&#60;MetaNode&#62; iterator() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return childNodes.iterator();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Add a MetaNode to the group. If the group already</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * has a node with the same name, this will be replaced by</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * the new node, otherwise it is added to the end of the</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * list.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param node&#9;new node to add (or replace existing with same name)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @returns&#9;&#9;reference to the MetaGroupNode (for chaining calls)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaGroupNode putNode(MetaNode node) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_84'/>
+84
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_84'>1</a>
+<span>
+
+1. putNode : All methods instructions replaced by: return null; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;for (int i=0; i&#60;childNodes.size(); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;if (childNodes.get(i).name.equals(node.name)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;childNodes.set(i, node);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;return this;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;childNodes.add(node);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return this;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Retrieve a MetaNode from the group, based on name.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param nodeName</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return&#9;&#9;&#9;named node, or null if not found</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaNode getNode(String nodeName) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_101'/>
+101
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_101'>1</a>
+<span>
+
+1. getNode : All methods instructions replaced by: return null; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;for (MetaNode n: childNodes) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;if (n.name.equals(nodeName))</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;return n;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Find a MetaNode under this node based on a path.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param path</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaNode findNode(String path) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_115'/>
+115
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_115'>1</a>
+<span>
+
+1. findNode : All methods instructions replaced by: return null; &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;DataPath dp = new DataPath(path);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;MetaNode m = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;MetaGroupNode parent = this;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_118'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;while (dp.moreLeft() &#38;&#38; parent!=null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;m = parent.getNode(dp.getFrontName());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;if (m instanceof MetaGroupNode)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;parent = (MetaGroupNode)m;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;else</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;parent = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return m;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_128'/>
+128
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_128'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_129'/>
+129
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_129'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Find a MetaNode under this node based on a path.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param path</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_132'/>
+132
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_132'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaNode findNode(DataPath path) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_135'/>
+135
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_135'>1</a>
+<span>
+
+1. findNode : All methods instructions replaced by: return null; &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;MetaNode m = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;MetaGroupNode parent = this;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;while (path.moreLeft() &#38;&#38; parent!=null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;m = parent.getNode(path.getFrontName());</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;if (m instanceof MetaGroupNode)</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;parent = (MetaGroupNode)m;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;else</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;parent = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_144'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;return m;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_147'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_148'/>
+148
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_148'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Remove a MetaNode from the group.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_150'/>
+150
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_150'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param nodeName&#9;name of node to remove</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_151'/>
+151
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_151'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return&#9;&#9;&#9;the removed node (null if not found)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_152'/>
+152
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_152'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_153'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public MetaNode removeNode(String nodeName) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_154'/>
+154
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_154'>1</a>
+<span>
+
+1. removeNode : All methods instructions replaced by: return null; &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;for (int i=0; i&#60;childNodes.size(); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;if (childNodes.get(i).name.equals(nodeName))</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;return childNodes.remove(i);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;return null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_162'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return&#9;number of MetaNodes in this group</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_163'/>
+163
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_163'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public int numberOfChildren() {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_165'/>
+165
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_165'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;return childNodes.size();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_166'/>
+166
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_166'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_167'/>
+167
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_167'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_169'/>
+169
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_169'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * Create a new tree of DataNodes based on meta data. It is a</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * recursive method, creating data nodes for all meta-nodes of a</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_171'/>
+171
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_171'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * MetaGroupNode. Value nodes will have any default values</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_172'/>
+172
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_172'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * specified by the meta items. If createAll is false, only</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_173'/>
+173
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_173'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * nodes which must be included are created - group nodes are</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_174'/>
+174
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_174'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * only created if the cardinality is 1 or 1-n, and value nodes</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_175'/>
+175
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_175'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * are only created if cardinality is 1 or 1-n, or a default value</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_176'/>
+176
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_176'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * is specified. If createAll is true, at least one node is</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_177'/>
+177
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_177'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * created for each MetaNode.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_178'/>
+178
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_178'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_179'/>
+179
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_179'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @param createAll&#9;&#9;create non-required nodes if true</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_180'/>
+180
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_180'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; * @return&#9;&#9;&#9;&#9;a new DataGroupNode with content as specified by the meta</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_181'/>
+181
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_181'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9; */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_182'/>
+182
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_182'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public DataGroupNode createData(boolean createAll) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_183'/>
+183
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_183'>1</a>
+<span>
+
+1. createData : All methods instructions replaced by: return null; &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;DataGroupNode result = new DataGroupNode(this);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_184'/>
+184
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_184'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;for (MetaNode m: childNodes) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_185'/>
+185
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_185'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;m.createData(result, createAll);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_186'/>
+186
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_186'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_187'/>
+187
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_187'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;return result;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_188'/>
+188
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_188'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_189'/>
+189
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_189'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_190'/>
+190
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_190'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_191'/>
+191
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_191'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void createData(DataGroupNode parent, boolean createAll) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_192'/>
+192
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_192'>1</a>
+<span>
+
+1. createData : All method instructions removed &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (isRequired() || createAll) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_193'/>
+193
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_193'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;DataGroupNode group = new DataGroupNode(this);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_194'/>
+194
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_194'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;for (MetaNode m: childNodes) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_195'/>
+195
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_195'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;m.createData(group, createAll);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_196'/>
+196
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_196'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_197'/>
+197
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_197'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;parent.addNodeRaw(group);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_198'/>
+198
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_198'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_199'/>
+199
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_199'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@620fdabe_200'/>
+200
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_200'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_84'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>putNode<br/><b>Killed by : </b>no.tellu.lib.data.MetaTest.testValueConstructor(no.tellu.lib.data.MetaTest)</span></span> All methods instructions replaced by: return null; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_101'>101</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_101'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getNode<br/><b>Killed by : </b>no.tellu.lib.data.MetaTest.testValueConstructor(no.tellu.lib.data.MetaTest)</span></span> All methods instructions replaced by: return null; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_115'>115</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_115'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findNode<br/><b>Killed by : </b>none</span></span> All methods instructions replaced by: return null; &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_135'>135</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_135'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findNode<br/><b>Killed by : </b>none</span></span> All methods instructions replaced by: return null; &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_154'>154</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_154'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>removeNode<br/><b>Killed by : </b>none</span></span> All methods instructions replaced by: return null; &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_183'>183</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_183'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createData<br/><b>Killed by : </b>no.tellu.lib.data.MetaTest.testCreateFromMeta(no.tellu.lib.data.MetaTest)</span></span> All methods instructions replaced by: return null; &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@620fdabe_192'>192</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@620fdabe_192'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createData<br/><b>Killed by : </b>no.tellu.lib.data.MetaTest.testCreateFromMeta(no.tellu.lib.data.MetaTest)</span></span> All method instructions removed &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>""</li>
+
+<li class='mutator'>"A"</li>
+
+<li class='mutator'>'A'</li>
+
+<li class='mutator'>'\40'</li>
+
+<li class='mutator'>(byte)0</li>
+
+<li class='mutator'>(byte)1</li>
+
+<li class='mutator'>(short)0</li>
+
+<li class='mutator'>(short)1</li>
+
+<li class='mutator'>0</li>
+
+<li class='mutator'>0.0</li>
+
+<li class='mutator'>0.0f</li>
+
+<li class='mutator'>0L</li>
+
+<li class='mutator'>1</li>
+
+<li class='mutator'>1.0</li>
+
+<li class='mutator'>1.0f</li>
+
+<li class='mutator'>1L</li>
+
+<li class='mutator'>empty</li>
+
+<li class='mutator'>false</li>
+
+<li class='mutator'>null</li>
+
+<li class='mutator'>true</li>
+
+<li class='mutator'>void</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>no.tellu.lib.data.model.ModelTest.testInitFromFile_mg6903(no.tellu.lib.data.model.ModelTest) (6 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg20102(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.MetaTest.testTypeParsing(no.tellu.lib.data.MetaTest) (0 ms)</li><li>no.tellu.lib.data.MetaTest.testReadOnly(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8122_mg8434_failAssert0(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.MetaTest.testJsonStrict(no.tellu.lib.data.MetaTest) (13 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_mg6903_mg6945(no.tellu.lib.data.model.ModelTest) (4 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_mg6903_mg6951_mg7303(no.tellu.lib.data.model.ModelTest) (5 ms)</li><li>no.tellu.lib.data.model.ModelTest.testProcessor(no.tellu.lib.data.model.ModelTest) (4 ms)</li><li>no.tellu.lib.data.model.ModelTest.testDataTransaction(no.tellu.lib.data.model.ModelTest) (10 ms)</li><li>no.tellu.lib.data.MetaTest.testTypeFromDefault(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.MetaTest.testJsonWithMeta(no.tellu.lib.data.MetaTest) (8 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8117_mg8493_mg11253_failAssert0(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.MetaParserTest.testMetaParser(no.tellu.lib.data.MetaParserTest) (77 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_add7501(no.tellu.lib.data.model.ModelTest) (6 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_mg7508_mg7803(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.model.ModelTest.testCopyModel(no.tellu.lib.data.model.ModelTest) (8 ms)</li><li>no.tellu.lib.data.MetaTest.testValueConstructor(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.MetaTest.testValidation(no.tellu.lib.data.MetaTest) (2 ms)</li><li>no.tellu.lib.data.MetaTest.testSetPath(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_mg7508(no.tellu.lib.data.model.ModelTest) (5 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8121_mg8234_failAssert0(no.tellu.lib.data.model.ModelTest) (836 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_add53394(no.tellu.lib.data.model.ModelTest) (25 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_add7505_add7831_mg12577_failAssert0(no.tellu.lib.data.model.ModelTest) (10 ms)</li><li>no.tellu.lib.data.MetaTest.testInvalidWithMeta(no.tellu.lib.data.MetaTest) (2 ms)</li><li>no.tellu.lib.data.MetaTest.testMergeNodes(no.tellu.lib.data.MetaTest) (2 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile(no.tellu.lib.data.model.ModelTest) (5 ms)</li><li>no.tellu.lib.data.MetaTest.testUnknownNode(no.tellu.lib.data.MetaTest) (0 ms)</li><li>no.tellu.lib.data.MetaTest.testDataType(no.tellu.lib.data.MetaTest) (0 ms)</li><li>no.tellu.lib.data.model.ModelTest.testPath(no.tellu.lib.data.model.ModelTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_add7501_mg8102(no.tellu.lib.data.model.ModelTest) (12 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel2(no.tellu.lib.data.model.ModelTest) (8 ms)</li><li>no.tellu.lib.data.MetaTest.testCreateFromMeta(no.tellu.lib.data.MetaTest) (2 ms)</li><li>no.tellu.lib.data.MetaTest.testAddWithMeta(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.MetaTest.testSetValues(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromMeta(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.model.ModelTest.testMergeNodes(no.tellu.lib.data.model.ModelTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testReset(no.tellu.lib.data.model.ModelTest) (5 ms)</li><li>no.tellu.lib.data.model.ModelTest.testRuleTrigger(no.tellu.lib.data.model.ModelTest) (4 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8118(no.tellu.lib.data.model.ModelTest) (9 ms)</li><li>no.tellu.lib.data.MetaTest.testSetMeta(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg20100_failAssert0(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8121_mg8234_failAssert0_mg12004_failAssert0(no.tellu.lib.data.model.ModelTest) (945 ms)</li><li>no.tellu.lib.data.model.ModelTest.testSubscribers(no.tellu.lib.data.model.ModelTest) (5 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromModel_mg8117_mg8480_mg12247(no.tellu.lib.data.model.ModelTest) (3 ms)</li><li>no.tellu.lib.data.model.ModelTest.testRuleCondition(no.tellu.lib.data.model.ModelTest) (10 ms)</li><li>no.tellu.lib.data.MetaTest.testCardinality(no.tellu.lib.data.MetaTest) (1 ms)</li><li>no.tellu.lib.data.model.ModelTest.testInitFromFile_add7501_mg8100_failAssert0(no.tellu.lib.data.model.ModelTest) (9 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.4.7
+
+</body>
+</html>
