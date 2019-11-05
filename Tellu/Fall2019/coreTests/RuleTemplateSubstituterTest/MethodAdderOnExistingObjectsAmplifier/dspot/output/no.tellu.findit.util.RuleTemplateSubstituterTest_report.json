@@ -1,0 +1,61 @@
+{
+  "nbMutantKilledOriginally": 9,
+  "name": "no.tellu.findit.util.RuleTemplateSubstituterTest",
+  "nbOriginalTestCases": 2,
+  "nbNewMutantKilled": 9,
+  "testCases": [
+    {
+      "name": "testSubstituteRules",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 9,
+      "mutantsKilled": [
+        {
+          "ID": "\"A\"",
+          "lineNumber": 163,
+          "locationMethod": "getActionObservationParameter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 163,
+          "locationMethod": "getActionObservationParameter"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 166,
+          "locationMethod": "getActionDataParameter"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 160,
+          "locationMethod": "getActionZoneParameter"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 166,
+          "locationMethod": "getActionDataParameter"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 163,
+          "locationMethod": "getActionObservationParameter"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 160,
+          "locationMethod": "getActionZoneParameter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 166,
+          "locationMethod": "getActionDataParameter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 160,
+          "locationMethod": "getActionZoneParameter"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "nbMutantKilledOriginally": 86,
+  "name": "no.tellu.findit.services.AddressLookupServiceTest",
+  "nbOriginalTestCases": 8,
+  "nbNewMutantKilled": 4,
+  "testCases": [
+    {
+      "name": "doOSMAddressLookup",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 186,
+          "locationMethod": "lookupAddressFromCache"
+        }
+      ]
+    },
+    {
+      "name": "doAddressLookupNoZoneString",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 558,
+          "locationMethod": "getAddressCacheEnabled"
+        }
+      ]
+    },
+    {
+      "name": "doOSMAddressLookupInBush",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "\"\"",
+          "lineNumber": 211,
+          "locationMethod": "createIndex"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 211,
+          "locationMethod": "createIndex"
+        }
+      ]
+    }
+  ]
+}

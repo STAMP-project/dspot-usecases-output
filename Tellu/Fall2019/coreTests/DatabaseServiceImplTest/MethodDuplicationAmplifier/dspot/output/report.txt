@@ -1,0 +1,4 @@
+Test class that has been amplified: no.tellu.findit.services.DatabaseServiceImplTest
+The original test suite kills 241 mutants
+The amplification results with 6 new tests
+it kills 109 more mutants

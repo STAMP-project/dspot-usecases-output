@@ -1,0 +1,601 @@
+{
+  "nbMutantKilledOriginally": 24,
+  "name": "no.tellu.findit.services.DatabaseServiceImplTest",
+  "nbOriginalTestCases": 5,
+  "nbNewMutantKilled": 109,
+  "testCases": [
+    {
+      "name": "testSaveAccessToken_add5717_add5779_add8778",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "void",
+          "lineNumber": 142,
+          "locationMethod": "loadProvider"
+        }
+      ]
+    },
+    {
+      "name": "testDeleteCustomer_add2024_failAssert0_add2240_failAssert0_add4272_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 7,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 386,
+          "locationMethod": "getManagedByServiceProvider"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 336,
+          "locationMethod": "getZoneOnlyCenterInside"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 413,
+          "locationMethod": "getQqMapEnabled"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 370,
+          "locationMethod": "getIncludeGuardsWithPropertyValue"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 865,
+          "locationMethod": "isDemoAccount"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 293,
+          "locationMethod": "getOverrideActionsEnabled"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 501,
+          "locationMethod": "getMaxSmsPerMonth"
+        }
+      ]
+    },
+    {
+      "name": "testSaveAccessToken_add5720_add6362_add8758",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 63,
+      "mutantsKilled": [
+        {
+          "ID": "0.0",
+          "lineNumber": 202,
+          "locationMethod": "getMessagesPerHour"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 181,
+          "locationMethod": "getNotificationsEnabled"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 514,
+          "locationMethod": "getAccumulatedPropertiesString"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 444,
+          "locationMethod": "getCounter"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 212,
+          "locationMethod": "getDemoUser"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 114,
+          "locationMethod": "getType"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 203,
+          "locationMethod": "getLimitedServiceOwner"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 181,
+          "locationMethod": "getNotificationsEnabled"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 257,
+          "locationMethod": "getInsideZonesString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 74,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 83,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 31,
+          "locationMethod": "getId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 351,
+          "locationMethod": "getStoredTypePropertiesString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 203,
+          "locationMethod": "getLimitedServiceOwner"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 212,
+          "locationMethod": "getDemoUser"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 154,
+          "locationMethod": "getFloor"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 220,
+          "locationMethod": "getStoredVariablesString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 474,
+          "locationMethod": "getFilterConfigString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 109,
+          "locationMethod": "getConfiguredOnce"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 620,
+          "locationMethod": "getTransitiveToPermanentMode"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 212,
+          "locationMethod": "getDemoUser"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 245,
+          "locationMethod": "getStoredTagsString"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 198,
+          "locationMethod": "setDeactivated"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 285,
+          "locationMethod": "getInsideZonesFullString"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 461,
+          "locationMethod": "getValidCounter"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 257,
+          "locationMethod": "getInsideZonesString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 263,
+          "locationMethod": "getServiceOwner"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 59,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 154,
+          "locationMethod": "getFloor"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 109,
+          "locationMethod": "getConfiguredOnce"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 87,
+          "locationMethod": "getShareLevel"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 118,
+          "locationMethod": "getConfiguredWhileActive"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 118,
+          "locationMethod": "getConfiguredWhileActive"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 351,
+          "locationMethod": "getStoredTypePropertiesString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 162,
+          "locationMethod": "isPositionOutOfOrder"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 31,
+          "locationMethod": "getId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 59,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 83,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 220,
+          "locationMethod": "getStoredVariablesString"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 263,
+          "locationMethod": "getServiceOwner"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 154,
+          "locationMethod": "getFloor"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 109,
+          "locationMethod": "getConfiguredOnce"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 162,
+          "locationMethod": "isPositionOutOfOrder"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 118,
+          "locationMethod": "getConfiguredWhileActive"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 448,
+          "locationMethod": "getAdditionalPropertiesString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 528,
+          "locationMethod": "getPrimaryPropertiesString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 285,
+          "locationMethod": "getInsideZonesFullString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 220,
+          "locationMethod": "getStoredVariablesString"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 165,
+          "locationMethod": "getMessagesPerTimeCounter"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 245,
+          "locationMethod": "getStoredTagsString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 634,
+          "locationMethod": "getLocationTimeStamp"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 559,
+          "locationMethod": "setTransientProperties"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 123,
+          "locationMethod": "setEmbeddedPosition"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 257,
+          "locationMethod": "getInsideZonesString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 351,
+          "locationMethod": "getStoredTypePropertiesString"
+        },
+        {
+          "ID": "void",
+          "lineNumber": 583,
+          "locationMethod": "setPermanentProperties"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 630,
+          "locationMethod": "hasOutdoorPosition"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 162,
+          "locationMethod": "isPositionOutOfOrder"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 500,
+          "locationMethod": "getFilterStateString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 245,
+          "locationMethod": "getStoredTagsString"
+        },
+        {
+          "ID": "false",
+          "lineNumber": 625,
+          "locationMethod": "hasIndoorLocation"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 59,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 31,
+          "locationMethod": "getId"
+        }
+      ]
+    },
+    {
+      "name": "testAddSensorDevice",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 35,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 165,
+          "locationMethod": "getMessagesPerTimeCounter"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 226,
+          "locationMethod": "getServiceProviderId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 514,
+          "locationMethod": "getAccumulatedPropertiesString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 620,
+          "locationMethod": "getTransitiveToPermanentMode"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 226,
+          "locationMethod": "getServiceProviderId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 514,
+          "locationMethod": "getAccumulatedPropertiesString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 74,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 461,
+          "locationMethod": "getValidCounter"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 212,
+          "locationMethod": "getCustomerId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 74,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 549,
+          "locationMethod": "getAdditionalProperties"
+        },
+        {
+          "ID": "1.0",
+          "lineNumber": 202,
+          "locationMethod": "getMessagesPerHour"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 561,
+          "locationMethod": "getFilterState"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 585,
+          "locationMethod": "getAccumulatedProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 620,
+          "locationMethod": "getTransitiveToPermanentMode"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 212,
+          "locationMethod": "getCustomerId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 528,
+          "locationMethod": "getPrimaryPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 448,
+          "locationMethod": "getAdditionalPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 474,
+          "locationMethod": "getFilterConfigString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 165,
+          "locationMethod": "getMessagesPerTimeCounter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 500,
+          "locationMethod": "getFilterStateString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 609,
+          "locationMethod": "getNextTimeoutPerFilter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 597,
+          "locationMethod": "getPrimaryProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 444,
+          "locationMethod": "getCounter"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 188,
+          "locationMethod": "isMessagesPerHourOutdated"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 85,
+          "locationMethod": "isEmbeddedPositionSet"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 448,
+          "locationMethod": "getAdditionalPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 500,
+          "locationMethod": "getFilterStateString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 461,
+          "locationMethod": "getValidCounter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 528,
+          "locationMethod": "getPrimaryPropertiesString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 202,
+          "locationMethod": "getMessagesPerHour"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 573,
+          "locationMethod": "getFilterConfig"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 536,
+          "locationMethod": "getCommandProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 474,
+          "locationMethod": "getFilterConfigString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 444,
+          "locationMethod": "getCounter"
+        }
+      ]
+    },
+    {
+      "name": "testSaveAccessToken_add5720_add5752",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 2,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 29,
+          "locationMethod": "deserialize"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 385,
+          "locationMethod": "getApprovedIp"
+        }
+      ]
+    },
+    {
+      "name": "testDeleteCustomer_add2021_add2236_failAssert0_add4005_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 1,
+      "mutantsKilled": [
+        {
+          "ID": "\"\"",
+          "lineNumber": 941,
+          "locationMethod": "getReportComponentsString"
+        }
+      ]
+    }
+  ]
+}
