@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":79,"id":1920,"methods":[{"el":30,"sc":5,"sl":26},{"el":36,"sc":5,"sl":32},{"el":42,"sc":5,"sl":38},{"el":48,"sc":5,"sl":44},{"el":59,"sc":5,"sl":50},{"el":77,"sc":5,"sl":61}],"name":"AssetGroupDAOHibernate","sl":24}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_11":{"methods":[{"sl":26},{"sl":50}],"name":"testDeleteCustomer_mg1_failAssert0","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]},"test_18":{"methods":[{"sl":26},{"sl":50}],"name":"testDeleteCustomer_mg3_failAssert0","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]},"test_33":{"methods":[{"sl":26},{"sl":50}],"name":"testDeleteCustomer","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]},"test_37":{"methods":[{"sl":26},{"sl":44}],"name":"testClearGroup","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":46},{"sl":47}]},"test_48":{"methods":[{"sl":26},{"sl":50}],"name":"testDeleteGroupsByOwner","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]},"test_64":{"methods":[{"sl":26},{"sl":50}],"name":"testDeleteCustomer_add2021_add2236_failAssert0_add4005_failAssert0","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":58}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [37, 33, 18, 11, 48, 64], [], [37, 33, 18, 11, 48, 64], [37, 33, 18, 11, 48, 64], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [37], [], [37], [37], [], [], [33, 18, 11, 48, 64], [], [], [33, 18, 11, 48, 64], [], [33, 18, 11, 48, 64], [33, 18, 11, 48, 64], [33, 18, 11, 48, 64], [33, 18, 11, 48, 64], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

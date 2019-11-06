@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>core Coverage Report</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        core Coverage Report
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database on nov 6 2019 15:13:47 CET</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="no/tellu/findit/domain/AccessTokenImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">AccessTokenImpl</a>
+            
+    
+            <a href="no/tellu/findit/services/AccountServiceImpl.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 26 ">AccountServiceImpl</a>
+            
+    
+            <a href="no/tellu/findit/services/AddressLookupServiceImpl.html" class="tag"
+            style="font-size: 48px;color:#e28e87"
+            title="# Elements - 711 , # Elements Covered - 179 ">AddressLookupServiceImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/AlarmDAOHibernate.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 232 , # Elements Covered - 27 ">AlarmDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/AlarmImpl.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="# Elements - 146 , # Elements Covered - 131 ">AlarmImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/AssetDAOHibernate.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 27 ">AssetDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetDeviceLinkImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 4 ">AssetDeviceLinkImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/AssetGroupDAOHibernate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 12 ">AssetGroupDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetGroupImpl.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 78 , # Elements Covered - 52 ">AssetGroupImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetImpl.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 194 , # Elements Covered - 110 ">AssetImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetListImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 5 ">AssetListImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetListItem.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 3 ">AssetListItem</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetPropertyImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 2 ">AssetPropertyImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetPropertyTypeImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 2 ">AssetPropertyTypeImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/AssetRecordDAOHibernate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 9 ">AssetRecordDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetRecordImpl.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 94 , # Elements Covered - 86 ">AssetRecordImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetRelationImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 53 , # Elements Covered - 2 ">AssetRelationImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/AssetTypeDAOHibernate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 9 ">AssetTypeDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetTypeImpl.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 143 , # Elements Covered - 78 ">AssetTypeImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetTypePropertyImpl.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 90 , # Elements Covered - 2 ">AssetTypePropertyImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/AssetVariable.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 85 , # Elements Covered - 78 ">AssetVariable</a>
+            
+    
+            <a href="no/tellu/findit/domain/AuthenticationTicket.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 2 ">AuthenticationTicket</a>
+            
+    
+            <a href="no/tellu/findit/domain/AwaitingConfirmation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">AwaitingConfirmation</a>
+            
+    
+            <a href="no/tellu/security/jpa/BaseAccount.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 16 ">BaseAccount</a>
+            
+    
+            <a href="no/tellu/security/jpa/BaseAddress.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 36 , # Elements Covered - 36 ">BaseAddress</a>
+            
+    
+            <a href="no/tellu/security/jpa/BaseRole.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 77 , # Elements Covered - 3 ">BaseRole</a>
+            
+    
+            <a href="no/tellu/security/jpa/BaseUser.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 33 ">BaseUser</a>
+            
+    
+            <a href="no/tellu/findit/domain/BeaconImpl.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 2 ">BeaconImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/BillingDeviceSubscriptionImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 3 ">BillingDeviceSubscriptionImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/BillingLogAction.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">BillingLogAction</a>
+            
+    
+            <a href="no/tellu/findit/domain/BillingLogImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 7 ">BillingLogImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/BootstrapNote.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 4 ">BootstrapNote</a>
+            
+    
+            <a href="no/tellu/findit/domain/BroadcastImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">BroadcastImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/BundleImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 2 ">BundleImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/BundleMembershipImpl.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">BundleMembershipImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/Carrier.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">Carrier</a>
+            
+    
+            <a href="no/tellu/findit/util/CassandraUtil.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 227 , # Elements Covered - 37 ">CassandraUtil</a>
+            
+    
+            <a href="no/tellu/findit/domain/ChangelogImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 2 ">ChangelogImpl</a>
+            
+    
+            <a href="no/tellu/findit/util/Circle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">Circle</a>
+            
+    
+            <a href="no/tellu/security/jpa/ClassName.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 3 ">ClassName</a>
+            
+    
+            <a href="no/tellu/findit/cmd/CommandException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 6 ">CommandException</a>
+            
+    
+            <a href="no/tellu/findit/cmd/hibernate/CommandHandlerImpl.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 25 ">CommandHandlerImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CommentImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 2 ">CommentImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/ContactListImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 2 ">ContactListImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/ContactListItemImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 2 ">ContactListItemImpl</a>
+            
+    
+            <a href="no/tellu/findit/util/ConvertToJson.html" class="tag"
+            style="font-size: 28px;color:#d9695f"
+            title="# Elements - 326 , # Elements Covered - 92 ">ConvertToJson</a>
+            
+    
+            <a href="no/tellu/findit/cmd/CreateUserAccountCmd.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 18 ">CreateUserAccountCmd</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerAddressLookupSetting.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CustomerAddressLookupSetting</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerAlarmCenterConfigImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 5 ">CustomerAlarmCenterConfigImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerBundleAccessImpl.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">CustomerBundleAccessImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerGroupImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 2 ">CustomerGroupImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerGroupMembershipImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">CustomerGroupMembershipImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerImage.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 2 ">CustomerImage</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerImpl.html" class="tag"
+            style="font-size: 36px;color:#89c495"
+            title="# Elements - 492 , # Elements Covered - 393 ">CustomerImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerLogo.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 2 ">CustomerLogo</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerMapSetting.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 2 ">CustomerMapSetting</a>
+            
+    
+            <a href="no/tellu/findit/domain/CustomerOverlay.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 104 , # Elements Covered - 4 ">CustomerOverlay</a>
+            
+    
+            <a href="no/tellu/findit/dao/DAOException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">DAOException</a>
+            
+    
+            <a href="no/tellu/findit/dao/DAOFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 3 ">DAOFactory</a>
+            
+    
+            <a href="no/tellu/findit/cmd/DataAccessCommand.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 5 ">DataAccessCommand</a>
+            
+    
+            <a href="no/tellu/findit/services/DatabaseServiceImpl.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="# Elements - 316 , # Elements Covered - 36 ">DatabaseServiceImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/DecorationImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 2 ">DecorationImpl</a>
+            
+    
+            <a href="no/tellu/findit/cmd/DeleteCustomerCmd.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 93 , # Elements Covered - 71 ">DeleteCustomerCmd</a>
+            
+    
+            <a href="no/tellu/findit/cmd/DeleteUserAccountCmd.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 17 ">DeleteUserAccountCmd</a>
+            
+    
+            <a href="no/tellu/findit/domain/DeviceCommandImpl.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 183 , # Elements Covered - 2 ">DeviceCommandImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/DomainFactory.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 42 ">DomainFactory</a>
+            
+    
+            <a href="no/tellu/findit/domain/DomainFactoryProviderImpl.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 250 , # Elements Covered - 157 ">DomainFactoryProviderImpl</a>
+            
+    
+            <a href="no/tellu/findit/cfg/Environment.html" class="tag"
+            style="font-size: 35px;color:#e28e87"
+            title="# Elements - 472 , # Elements Covered - 184 ">Environment</a>
+            
+    
+            <a href="no/tellu/findit/domain/Event.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 148 , # Elements Covered - 2 ">Event</a>
+            
+    
+            <a href="no/tellu/findit/cmd/FindCustomerWithAddrLookupDataCmd.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 25 , # Elements Covered - 22 ">FindCustomerWithAddrLookupDataCmd</a>
+            
+    
+            <a href="no/tellu/findit/FindItException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">FindItException</a>
+            
+    
+            <a href="no/tellu/findit/cmd/FindLabelsForItemCmd.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 8 ">FindLabelsForItemCmd</a>
+            
+    
+            <a href="no/tellu/findit/cmd/FindLocationsByCustomerCmd.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 18 ">FindLocationsByCustomerCmd</a>
+            
+    
+            <a href="no/tellu/findit/cmd/FindUserByUsernameCmd.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 15 ">FindUserByUsernameCmd</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/FinditUserDAOHibernate.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 12 ">FinditUserDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/FinditUserImpl.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="# Elements - 172 , # Elements Covered - 157 ">FinditUserImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/FinditUserType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">FinditUserType</a>
+            
+    
+            <a href="no/tellu/findit/domain/GdprRequestImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 62 , # Elements Covered - 2 ">GdprRequestImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/GenericHibernateDAO.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">GenericHibernateDAO</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/HibernateDAOFactory.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 165 , # Elements Covered - 97 ">HibernateDAOFactory</a>
+            
+    
+            <a href="no/tellu/findit/cfg/HibernateUtil.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 176 , # Elements Covered - 147 ">HibernateUtil</a>
+            
+    
+            <a href="no/tellu/findit/domain/HistoryFilterRelation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 2 ">HistoryFilterRelation</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/IndoorLocationDAOHibernate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">IndoorLocationDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/IndoorLocationImpl.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 80 , # Elements Covered - 63 ">IndoorLocationImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/InvitationImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 5 ">InvitationImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/InvitationStatus.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">InvitationStatus</a>
+            
+    
+            <a href="no/tellu/findit/domain/InvitationType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">InvitationType</a>
+            
+    
+            <a href="no/tellu/findit/util/IpRange.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">IpRange</a>
+            
+    
+            <a href="no/tellu/findit/util/JsonUtil.html" class="tag"
+            style="font-size: 24px;color:#d04437"
+            title="# Elements - 254 , # Elements Covered - 3 ">JsonUtil</a>
+            
+    
+            <a href="no/tellu/findit/dao/LabelDAO.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">LabelDAO.ItemIdType</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/LabelDAOHibernate.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 18 ">LabelDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/LabelImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 2 ">LabelImpl</a>
+            
+    
+            <a href="no/tellu/findit/util/ListToStringUtil.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 22 ">ListToStringUtil</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/LocationDAOHibernate.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="# Elements - 163 , # Elements Covered - 38 ">LocationDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/LocationImpl.html" class="tag"
+            style="font-size: 31px;color:#e7a19b"
+            title="# Elements - 378 , # Elements Covered - 212 ">LocationImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/LocationProjectionType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LocationProjectionType</a>
+            
+    
+            <a href="no/tellu/findit/domain/LocationTypeImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 4 ">LocationTypeImpl</a>
+            
+    
+            <a href="no/tellu/findit/util/MapToStringUtil.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 75 , # Elements Covered - 66 ">MapToStringUtil</a>
+            
+    
+            <a href="no/tellu/findit/domain/MetaDocumentImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 2 ">MetaDocumentImpl</a>
+            
+    
+            <a href="no/tellu/security/jpa/Permission.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 3 ">Permission</a>
+            
+    
+            <a href="no/tellu/findit/domain/PersonalUserSettings.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 9 ">PersonalUserSettings</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/PositionDAOHibernate.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 3 ">PositionDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/PositionImpl.html" class="tag"
+            style="font-size: 31px;color:#e7a19b"
+            title="# Elements - 384 , # Elements Covered - 234 ">PositionImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/PositionProviderImpl.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 245 , # Elements Covered - 190 ">PositionProviderImpl</a>
+            
+    
+            <a href="no/tellu/security/jpa/Relation.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 66 , # Elements Covered - 3 ">Relation</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/RuleCacheDAOHibernate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">RuleCacheDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/RuleCacheImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">RuleCacheImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/RuleDAOHibernate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 8 ">RuleDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/RuleImpl.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 129 , # Elements Covered - 88 ">RuleImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/RuleState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RuleState</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/RuleTemplateDAOHibernate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">RuleTemplateDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/RuleTemplateImpl.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 34 ">RuleTemplateImpl</a>
+            
+    
+            <a href="no/tellu/findit/util/RuleTemplateSubstituter.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 184 , # Elements Covered - 149 ">RuleTemplateSubstituter</a>
+            
+    
+            <a href="no/tellu/findit/util/RuleTemplateSubstituterVariable.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 30 , # Elements Covered - 26 ">RuleTemplateSubstituterVariable</a>
+            
+    
+            <a href="no/tellu/findit/cmd/SaveAccessTokenCmd.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">SaveAccessTokenCmd</a>
+            
+    
+            <a href="no/tellu/findit/cmd/SaveAssetCmd.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 12 ">SaveAssetCmd</a>
+            
+    
+            <a href="no/tellu/findit/cmd/SaveSensorDeviceCmd.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">SaveSensorDeviceCmd</a>
+            
+    
+            <a href="no/tellu/findit/domain/SavedHistoryFilter.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 2 ">SavedHistoryFilter</a>
+            
+    
+            <a href="no/tellu/findit/domain/SavedSearch.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 2 ">SavedSearch</a>
+            
+    
+            <a href="no/tellu/findit/domain/SensorDeviceConfigurationImpl.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 119 , # Elements Covered - 72 ">SensorDeviceConfigurationImpl</a>
+            
+    
+            <a href="no/tellu/findit/dao/hibernate/SensorDeviceDAOHibernate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">SensorDeviceDAOHibernate</a>
+            
+    
+            <a href="no/tellu/findit/domain/SensorDeviceImpl.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="# Elements - 306 , # Elements Covered - 206 ">SensorDeviceImpl</a>
+            
+    
+            <a href="no/tellu/findit/services/ServiceFactory.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 19 ">ServiceFactory</a>
+            
+    
+            <a href="no/tellu/findit/services/ServiceFactoryProviderImpl.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 109 , # Elements Covered - 20 ">ServiceFactoryProviderImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/ServiceProviderImpl.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="# Elements - 228 , # Elements Covered - 185 ">ServiceProviderImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/ShareLevel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">ShareLevel</a>
+            
+    
+            <a href="no/tellu/findit/domain/SubscriptionCommunicationStatus.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SubscriptionCommunicationStatus</a>
+            
+    
+            <a href="no/tellu/findit/domain/SubscriptionImpl.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="# Elements - 123 , # Elements Covered - 3 ">SubscriptionImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/SubscriptionMessageImpl.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 4 ">SubscriptionMessageImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/SupportPageImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 2 ">SupportPageImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/TagImpl.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 85 , # Elements Covered - 1 ">TagImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/TemplateImpl.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 3 ">TemplateImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/Tracking.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">Tracking</a>
+            
+    
+            <a href="no/tellu/findit/domain/UserGroupImpl.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 2 ">UserGroupImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/UserNotificationSubscription.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 3 ">UserNotificationSubscription.DeviceType</a>
+            
+    
+            <a href="no/tellu/findit/domain/UserNotificationSubscriptionImpl.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 85 , # Elements Covered - 3 ">UserNotificationSubscriptionImpl</a>
+            
+    
+            <a href="no/tellu/findit/domain/Wapp.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 2 ">Wapp</a>
+            
+    
+            <a href="no/tellu/findit/domain/Widget.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 2 ">Widget</a>
+            
+    
+            <a href="no/tellu/findit/domain/WidgetTemplate.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 2 ">WidgetTemplate</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.3.1
+                on on nov 6 2019 15:15:51 CET using coverage data from on nov 6 2019 15:14:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

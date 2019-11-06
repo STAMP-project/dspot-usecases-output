@@ -1,0 +1,3060 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>core Coverage Report</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        core Coverage Report
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="no.tellu.findit.domain">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database on nov 6 2019 15:13:47 CET</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package no.tellu.findit.domain
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">996</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">3 891</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">2 478</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">158</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">151</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">19 718</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">14 551</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">3 074</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1,57</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">15,68</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1,24</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">996</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">3 891</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">2 478</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">158</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">151</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">19 718</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">14 551</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">3 074</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1,57</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">15,68</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1,24</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+
+        
+        <table id="packageSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Package</th>
+                    <th colspan="1">
+                <label >Files</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">no.tellu.findit.domain</span>
+                    no.tellu.findit.domain
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">151.0</span>
+            151
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2405165</span>
+            1,24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.37338763</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.37338763</span>37,3%</div><div style="display: table-cell">
+ <div title="37,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:37.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+        <table id="packageClassesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Class</th>
+                            <th colspan="1">
+                <label >
+                    Methods
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <tr>
+    <td>
+                    
+                <span class="sortValue">AccessRestriction</span>
+                    <a href="AccessRestriction.html" title="AccessRestriction">AccessRestriction</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7727273</span>
+            1,77
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Action</span>
+                    <a href="Action.html" title="Action">Action</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1,5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetPropertyDefinitionImpl</span>
+                    <a href="AssetPropertyDefinitionImpl.html" title="AssetPropertyDefinitionImpl">AssetPropertyDefinitionImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">15.0</span>
+            15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1333333</span>
+            1,13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">DependentSensor</span>
+                    <a href="DependentSensor.html" title="DependentSensor">DependentSensor</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2857143</span>
+            1,29
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">FilterConfiguration</span>
+                    <a href="FilterConfiguration.html" title="FilterConfiguration">FilterConfiguration</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">36.0</span>
+            36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0277777</span>
+            2,03
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Report.ReportGranularity</span>
+                    <a href="Report.html" title="Report.ReportGranularity">Report.ReportGranularity</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Report.ReportType</span>
+                    <a href="Report.html" title="Report.ReportType">Report.ReportType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ReportImpl</span>
+                    <a href="ReportImpl.html" title="ReportImpl">ReportImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">54.0</span>
+            54
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.037037</span>
+            1,04
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ReportScheduleImpl</span>
+                    <a href="ReportScheduleImpl.html" title="ReportScheduleImpl">ReportScheduleImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">36.0</span>
+            36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0555556</span>
+            1,06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ReportScheduleInterval</span>
+                    <a href="ReportScheduleInterval.html" title="ReportScheduleInterval">ReportScheduleInterval</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.3333333</span>
+            3,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SubscriptionType</span>
+                    <a href="SubscriptionType.html" title="SubscriptionType">SubscriptionType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.25</span>
+            1,25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SystemLogEvent</span>
+                    <a href="SystemLogEvent.html" title="SystemLogEvent">SystemLogEvent</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">TranslationStringImpl</span>
+                    <a href="TranslationStringImpl.html" title="TranslationStringImpl">TranslationStringImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">DeviceCommandImpl</span>
+                    <a href="DeviceCommandImpl.html" title="DeviceCommandImpl">DeviceCommandImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">61.0</span>
+            61
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3278688</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.010928961</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.010928961</span>1,1%</div><div style="display: table-cell">
+ <div title="1,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:1.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">TagImpl</span>
+                    <a href="TagImpl.html" title="TagImpl">TagImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2142857</span>
+            1,21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.011764706</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.011764706</span>1,2%</div><div style="display: table-cell">
+ <div title="1,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:1.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Event</span>
+                    <a href="Event.html" title="Event">Event</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">45.0</span>
+            45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1555556</span>
+            1,16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.013513514</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.013513514</span>1,4%</div><div style="display: table-cell">
+ <div title="1,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:1.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetTypePropertyImpl</span>
+                    <a href="AssetTypePropertyImpl.html" title="AssetTypePropertyImpl">AssetTypePropertyImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">37.0</span>
+            37
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2162162</span>
+            1,22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.022222223</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.022222223</span>2,2%</div><div style="display: table-cell">
+ <div title="2,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BeaconImpl</span>
+                    <a href="BeaconImpl.html" title="BeaconImpl">BeaconImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3214285</span>
+            1,32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.024390243</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.024390243</span>2,4%</div><div style="display: table-cell">
+ <div title="2,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SubscriptionImpl</span>
+                    <a href="SubscriptionImpl.html" title="SubscriptionImpl">SubscriptionImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">56.0</span>
+            56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1071428</span>
+            1,11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.024390243</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.024390243</span>2,4%</div><div style="display: table-cell">
+ <div title="2,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Widget</span>
+                    <a href="Widget.html" title="Widget">Widget</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">38.0</span>
+            38
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0526316</span>
+            1,05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.024390243</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.024390243</span>2,4%</div><div style="display: table-cell">
+ <div title="2,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Wapp</span>
+                    <a href="Wapp.html" title="Wapp">Wapp</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">36.0</span>
+            36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0833334</span>
+            1,08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.025641026</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.025641026</span>2,6%</div><div style="display: table-cell">
+ <div title="2,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">WidgetTemplate</span>
+                    <a href="WidgetTemplate.html" title="WidgetTemplate">WidgetTemplate</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">34.0</span>
+            34
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0588236</span>
+            1,06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.027027028</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.027027028</span>2,7%</div><div style="display: table-cell">
+ <div title="2,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">DecorationImpl</span>
+                    <a href="DecorationImpl.html" title="DecorationImpl">DecorationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">30.0</span>
+            30
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0666667</span>
+            1,07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03125</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03125</span>3,1%</div><div style="display: table-cell">
+ <div title="3,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">GdprRequestImpl</span>
+                    <a href="GdprRequestImpl.html" title="GdprRequestImpl">GdprRequestImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">30.0</span>
+            30
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0333333</span>
+            1,03
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.032258064</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.032258064</span>3,2%</div><div style="display: table-cell">
+ <div title="3,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetPropertyImpl</span>
+                    <a href="AssetPropertyImpl.html" title="AssetPropertyImpl">AssetPropertyImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0714285</span>
+            1,07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.033333335</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.033333335</span>3,3%</div><div style="display: table-cell">
+ <div title="3,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetPropertyTypeImpl</span>
+                    <a href="AssetPropertyTypeImpl.html" title="AssetPropertyTypeImpl">AssetPropertyTypeImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0714285</span>
+            1,07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.033333335</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.033333335</span>3,3%</div><div style="display: table-cell">
+ <div title="3,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">LabelImpl</span>
+                    <a href="LabelImpl.html" title="LabelImpl">LabelImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2272727</span>
+            1,23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03448276</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03448276</span>3,4%</div><div style="display: table-cell">
+ <div title="3,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SavedHistoryFilter</span>
+                    <a href="SavedHistoryFilter.html" title="SavedHistoryFilter">SavedHistoryFilter</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3181819</span>
+            1,32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03448276</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03448276</span>3,4%</div><div style="display: table-cell">
+ <div title="3,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">UserNotificationSubscriptionImpl</span>
+                    <a href="UserNotificationSubscriptionImpl.html" title="UserNotificationSubscriptionImpl">UserNotificationSubscriptionImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">41.0</span>
+            41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0487804</span>
+            1,05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03529412</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03529412</span>3,5%</div><div style="display: table-cell">
+ <div title="3,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">MetaDocumentImpl</span>
+                    <a href="MetaDocumentImpl.html" title="MetaDocumentImpl">MetaDocumentImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">26.0</span>
+            26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0769231</span>
+            1,08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.035714287</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.035714287</span>3,6%</div><div style="display: table-cell">
+ <div title="3,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetRelationImpl</span>
+                    <a href="AssetRelationImpl.html" title="AssetRelationImpl">AssetRelationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">23.0</span>
+            23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03773585</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03773585</span>3,8%</div><div style="display: table-cell">
+ <div title="3,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerOverlay</span>
+                    <a href="CustomerOverlay.html" title="CustomerOverlay">CustomerOverlay</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">47.0</span>
+            47
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0851064</span>
+            1,09
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03846154</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03846154</span>3,8%</div><div style="display: table-cell">
+ <div title="3,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SavedSearch</span>
+                    <a href="SavedSearch.html" title="SavedSearch">SavedSearch</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1363636</span>
+            1,14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.03846154</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.03846154</span>3,8%</div><div style="display: table-cell">
+ <div title="3,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:3.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CommentImpl</span>
+                    <a href="CommentImpl.html" title="CommentImpl">CommentImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0909091</span>
+            1,09
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.041666668</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.041666668</span>4,2%</div><div style="display: table-cell">
+ <div title="4,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:4.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerMapSetting</span>
+                    <a href="CustomerMapSetting.html" title="CustomerMapSetting">CustomerMapSetting</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.8</span>
+            2,8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.04347826</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.04347826</span>4,3%</div><div style="display: table-cell">
+ <div title="4,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:4.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetListItem</span>
+                    <a href="AssetListItem.html" title="AssetListItem">AssetListItem</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">24.0</span>
+            24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.25</span>
+            1,25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.04761905</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.04761905</span>4,8%</div><div style="display: table-cell">
+ <div title="4,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:4.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AuthenticationTicket</span>
+                    <a href="AuthenticationTicket.html" title="AuthenticationTicket">AuthenticationTicket</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1111112</span>
+            1,11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.05</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.05</span>5%</div><div style="display: table-cell">
+ <div title="5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerGroupImpl</span>
+                    <a href="CustomerGroupImpl.html" title="CustomerGroupImpl">CustomerGroupImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1111112</span>
+            1,11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.05</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.05</span>5%</div><div style="display: table-cell">
+ <div title="5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ContactListImpl</span>
+                    <a href="ContactListImpl.html" title="ContactListImpl">ContactListImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.125</span>
+            1,12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.055555556</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.055555556</span>5,6%</div><div style="display: table-cell">
+ <div title="5,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerImage</span>
+                    <a href="CustomerImage.html" title="CustomerImage">CustomerImage</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.055555556</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.055555556</span>5,6%</div><div style="display: table-cell">
+ <div title="5,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">UserGroupImpl</span>
+                    <a href="UserGroupImpl.html" title="UserGroupImpl">UserGroupImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.125</span>
+            1,12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.055555556</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.055555556</span>5,6%</div><div style="display: table-cell">
+ <div title="5,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SupportPageImpl</span>
+                    <a href="SupportPageImpl.html" title="SupportPageImpl">SupportPageImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0625</span>
+            1,06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.05882353</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.05882353</span>5,9%</div><div style="display: table-cell">
+ <div title="5,9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:5.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ChangelogImpl</span>
+                    <a href="ChangelogImpl.html" title="ChangelogImpl">ChangelogImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1428572</span>
+            1,14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0625</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0625</span>6,2%</div><div style="display: table-cell">
+ <div title="6,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ContactListItemImpl</span>
+                    <a href="ContactListItemImpl.html" title="ContactListItemImpl">ContactListItemImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1428572</span>
+            1,14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0625</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0625</span>6,2%</div><div style="display: table-cell">
+ <div title="6,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SubscriptionMessageImpl</span>
+                    <a href="SubscriptionMessageImpl.html" title="SubscriptionMessageImpl">SubscriptionMessageImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0714285</span>
+            1,07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.06666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.06666667</span>6,7%</div><div style="display: table-cell">
+ <div title="6,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BillingDeviceSubscriptionImpl</span>
+                    <a href="BillingDeviceSubscriptionImpl.html" title="BillingDeviceSubscriptionImpl">BillingDeviceSubscriptionImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">20.0</span>
+            20
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1</span>
+            1,1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.06818182</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.06818182</span>6,8%</div><div style="display: table-cell">
+ <div title="6,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">LocationTypeImpl</span>
+                    <a href="LocationTypeImpl.html" title="LocationTypeImpl">LocationTypeImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">25.0</span>
+            25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.16</span>
+            1,16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.06896552</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.06896552</span>6,9%</div><div style="display: table-cell">
+ <div title="6,9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BroadcastImpl</span>
+                    <a href="BroadcastImpl.html" title="BroadcastImpl">BroadcastImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">12.0</span>
+            12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1666666</span>
+            1,17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.071428575</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.071428575</span>7,1%</div><div style="display: table-cell">
+ <div title="7,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerGroupMembershipImpl</span>
+                    <a href="CustomerGroupMembershipImpl.html" title="CustomerGroupMembershipImpl">CustomerGroupMembershipImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">12.0</span>
+            12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1666666</span>
+            1,17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.071428575</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.071428575</span>7,1%</div><div style="display: table-cell">
+ <div title="7,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">RuleCacheImpl</span>
+                    <a href="RuleCacheImpl.html" title="RuleCacheImpl">RuleCacheImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">12.0</span>
+            12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1666666</span>
+            1,17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.071428575</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.071428575</span>7,1%</div><div style="display: table-cell">
+ <div title="7,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">TemplateImpl</span>
+                    <a href="TemplateImpl.html" title="TemplateImpl">TemplateImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">19.0</span>
+            19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1052631</span>
+            1,11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.07317073</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.07317073</span>7,3%</div><div style="display: table-cell">
+ <div title="7,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerAlarmCenterConfigImpl</span>
+                    <a href="CustomerAlarmCenterConfigImpl.html" title="CustomerAlarmCenterConfigImpl">CustomerAlarmCenterConfigImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">31.0</span>
+            31
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0645162</span>
+            1,06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.07462686</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.07462686</span>7,5%</div><div style="display: table-cell">
+ <div title="7,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">InvitationImpl</span>
+                    <a href="InvitationImpl.html" title="InvitationImpl">InvitationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">23.0</span>
+            23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0869565</span>
+            1,09
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.09803922</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.09803922</span>9,8%</div><div style="display: table-cell">
+ <div title="9,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:9.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BundleImpl</span>
+                    <a href="BundleImpl.html" title="BundleImpl">BundleImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.25</span>
+            1,25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.1</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.1</span>10%</div><div style="display: table-cell">
+ <div title="10% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerLogo</span>
+                    <a href="CustomerLogo.html" title="CustomerLogo">CustomerLogo</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.1</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.1</span>10%</div><div style="display: table-cell">
+ <div title="10% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">HistoryFilterRelation</span>
+                    <a href="HistoryFilterRelation.html" title="HistoryFilterRelation">HistoryFilterRelation</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.1</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.1</span>10%</div><div style="display: table-cell">
+ <div title="10% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetListImpl</span>
+                    <a href="AssetListImpl.html" title="AssetListImpl">AssetListImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">21.0</span>
+            21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0952381</span>
+            1,1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.10638298</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.10638298</span>10,6%</div><div style="display: table-cell">
+ <div title="10,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BillingLogImpl</span>
+                    <a href="BillingLogImpl.html" title="BillingLogImpl">BillingLogImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">26.0</span>
+            26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.109375</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.109375</span>10,9%</div><div style="display: table-cell">
+ <div title="10,9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:10.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">UserNotificationSubscription.DeviceType</span>
+                    <a href="UserNotificationSubscription.html" title="UserNotificationSubscription.DeviceType">UserNotificationSubscription.DeviceType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.11111111</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.11111111</span>11,1%</div><div style="display: table-cell">
+ <div title="11,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:11.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetDeviceLinkImpl</span>
+                    <a href="AssetDeviceLinkImpl.html" title="AssetDeviceLinkImpl">AssetDeviceLinkImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">17.0</span>
+            17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.11764706</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.11764706</span>11,8%</div><div style="display: table-cell">
+ <div title="11,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:11.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BundleMembershipImpl</span>
+                    <a href="BundleMembershipImpl.html" title="BundleMembershipImpl">BundleMembershipImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.125</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.125</span>12,5%</div><div style="display: table-cell">
+ <div title="12,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:12.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerBundleAccessImpl</span>
+                    <a href="CustomerBundleAccessImpl.html" title="CustomerBundleAccessImpl">CustomerBundleAccessImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.125</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.125</span>12,5%</div><div style="display: table-cell">
+ <div title="12,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:12.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">PersonalUserSettings</span>
+                    <a href="PersonalUserSettings.html" title="PersonalUserSettings">PersonalUserSettings</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">23.0</span>
+            23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2608696</span>
+            1,26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.13043478</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.13043478</span>13%</div><div style="display: table-cell">
+ <div title="13% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:13%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AwaitingConfirmation</span>
+                    <a href="AwaitingConfirmation.html" title="AwaitingConfirmation">AwaitingConfirmation</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.16666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.16666667</span>16,7%</div><div style="display: table-cell">
+ <div title="16,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:16.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Carrier</span>
+                    <a href="Carrier.html" title="Carrier">Carrier</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.16666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.16666667</span>16,7%</div><div style="display: table-cell">
+ <div title="16,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:16.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BillingLogAction</span>
+                    <a href="BillingLogAction.html" title="BillingLogAction">BillingLogAction</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18181819</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18181819</span>18,2%</div><div style="display: table-cell">
+ <div title="18,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">FinditUserType</span>
+                    <a href="FinditUserType.html" title="FinditUserType">FinditUserType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18181819</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18181819</span>18,2%</div><div style="display: table-cell">
+ <div title="18,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">InvitationStatus</span>
+                    <a href="InvitationStatus.html" title="InvitationStatus">InvitationStatus</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18181819</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18181819</span>18,2%</div><div style="display: table-cell">
+ <div title="18,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">InvitationType</span>
+                    <a href="InvitationType.html" title="InvitationType">InvitationType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18181819</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18181819</span>18,2%</div><div style="display: table-cell">
+ <div title="18,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ShareLevel</span>
+                    <a href="ShareLevel.html" title="ShareLevel">ShareLevel</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.18181819</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.18181819</span>18,2%</div><div style="display: table-cell">
+ <div title="18,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:18.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BootstrapNote</span>
+                    <a href="BootstrapNote.html" title="BootstrapNote">BootstrapNote</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.25</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.25</span>25%</div><div style="display: table-cell">
+ <div title="25% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:25%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerAddressLookupSetting</span>
+                    <a href="CustomerAddressLookupSetting.html" title="CustomerAddressLookupSetting">CustomerAddressLookupSetting</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">LocationProjectionType</span>
+                    <a href="LocationProjectionType.html" title="LocationProjectionType">LocationProjectionType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">RuleState</span>
+                    <a href="RuleState.html" title="RuleState">RuleState</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SubscriptionCommunicationStatus</span>
+                    <a href="SubscriptionCommunicationStatus.html" title="SubscriptionCommunicationStatus">SubscriptionCommunicationStatus</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Tracking</span>
+                    <a href="Tracking.html" title="Tracking">Tracking</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">RuleTemplateImpl</span>
+                    <a href="RuleTemplateImpl.html" title="RuleTemplateImpl">RuleTemplateImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3888888</span>
+            1,39
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5074627</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5074627</span>50,7%</div><div style="display: table-cell">
+ <div title="50,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetTypeImpl</span>
+                    <a href="AssetTypeImpl.html" title="AssetTypeImpl">AssetTypeImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">37.0</span>
+            37
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3513514</span>
+            1,35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.54545456</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.54545456</span>54,5%</div><div style="display: table-cell">
+ <div title="54,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:54.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">LocationImpl</span>
+                    <a href="LocationImpl.html" title="LocationImpl">LocationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">52.0</span>
+            52
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3269231</span>
+            2,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.56084657</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.56084657</span>56,1%</div><div style="display: table-cell">
+ <div title="56,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:56.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetImpl</span>
+                    <a href="AssetImpl.html" title="AssetImpl">AssetImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">51.0</span>
+            51
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5670103</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5670103</span>56,7%</div><div style="display: table-cell">
+ <div title="56,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:56.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SensorDeviceConfigurationImpl</span>
+                    <a href="SensorDeviceConfigurationImpl.html" title="SensorDeviceConfigurationImpl">SensorDeviceConfigurationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">34.0</span>
+            34
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5588236</span>
+            1,56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.60504204</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.60504204</span>60,5%</div><div style="display: table-cell">
+ <div title="60,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">PositionImpl</span>
+                    <a href="PositionImpl.html" title="PositionImpl">PositionImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">88.0</span>
+            88
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3636364</span>
+            1,36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.609375</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.609375</span>60,9%</div><div style="display: table-cell">
+ <div title="60,9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">DomainFactoryProviderImpl</span>
+                    <a href="DomainFactoryProviderImpl.html" title="DomainFactoryProviderImpl">DomainFactoryProviderImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">23.0</span>
+            23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.9130435</span>
+            1,91
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.628</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.628</span>62,8%</div><div style="display: table-cell">
+ <div title="62,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:62.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetGroupImpl</span>
+                    <a href="AssetGroupImpl.html" title="AssetGroupImpl">AssetGroupImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">27.0</span>
+            27
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1,33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66,7%</div><div style="display: table-cell">
+ <div title="66,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SensorDeviceImpl</span>
+                    <a href="SensorDeviceImpl.html" title="SensorDeviceImpl">SensorDeviceImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">92.0</span>
+            92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3152174</span>
+            1,32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.67320263</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.67320263</span>67,3%</div><div style="display: table-cell">
+ <div title="67,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:67.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">RuleImpl</span>
+                    <a href="RuleImpl.html" title="RuleImpl">RuleImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">45.0</span>
+            45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2222222</span>
+            1,22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.68217057</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.68217057</span>68,2%</div><div style="display: table-cell">
+ <div title="68,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">DomainFactory</span>
+                    <a href="DomainFactory.html" title="DomainFactory">DomainFactory</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">26.0</span>
+            26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0769231</span>
+            1,08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7118644</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7118644</span>71,2%</div><div style="display: table-cell">
+ <div title="71,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">PositionProviderImpl</span>
+                    <a href="PositionProviderImpl.html" title="PositionProviderImpl">PositionProviderImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">70.0</span>
+            70
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4142857</span>
+            1,41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7755102</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7755102</span>77,6%</div><div style="display: table-cell">
+ <div title="77,6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">IndoorLocationImpl</span>
+                    <a href="IndoorLocationImpl.html" title="IndoorLocationImpl">IndoorLocationImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">33.0</span>
+            33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.060606</span>
+            1,06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7875</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7875</span>78,8%</div><div style="display: table-cell">
+ <div title="78,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:78.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CustomerImpl</span>
+                    <a href="CustomerImpl.html" title="CustomerImpl">CustomerImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">170.0</span>
+            170
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2823529</span>
+            1,28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7987805</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7987805</span>79,9%</div><div style="display: table-cell">
+ <div title="79,9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:79.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">ServiceProviderImpl</span>
+                    <a href="ServiceProviderImpl.html" title="ServiceProviderImpl">ServiceProviderImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">92.0</span>
+            92
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1521739</span>
+            1,15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8114035</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8114035</span>81,1%</div><div style="display: table-cell">
+ <div title="81,1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:81.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AlarmImpl</span>
+                    <a href="AlarmImpl.html" title="AlarmImpl">AlarmImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">63.0</span>
+            63
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1587301</span>
+            1,16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.89726025</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.89726025</span>89,7%</div><div style="display: table-cell">
+ <div title="89,7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:89.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">FinditUserImpl</span>
+                    <a href="FinditUserImpl.html" title="FinditUserImpl">FinditUserImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">67.0</span>
+            67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1641791</span>
+            1,16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9127907</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9127907</span>91,3%</div><div style="display: table-cell">
+ <div title="91,3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetRecordImpl</span>
+                    <a href="AssetRecordImpl.html" title="AssetRecordImpl">AssetRecordImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">35.0</span>
+            35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2</span>
+            1,2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9148936</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9148936</span>91,5%</div><div style="display: table-cell">
+ <div title="91,5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AssetVariable</span>
+                    <a href="AssetVariable.html" title="AssetVariable">AssetVariable</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">13.0</span>
+            13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.91764706</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.91764706</span>91,8%</div><div style="display: table-cell">
+ <div title="91,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AccessTokenImpl</span>
+                    <a href="AccessTokenImpl.html" title="AccessTokenImpl">AccessTokenImpl</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+                    <div>
+                <small>
+                    This package contains 62 empty classes or
+                    interfaces which are not listed.
+                </small>
+            </div>
+        
+    </div> <!-- tabs-pane active-pane -->
+</div>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.3.1
+                on on nov 6 2019 15:15:51 CET using coverage data from on nov 6 2019 15:14:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>
