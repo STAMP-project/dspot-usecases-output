@@ -1,0 +1,227 @@
+{
+  "nbMutantKilledOriginally": 25,
+  "name": "no.tellu.findit.services.DatabaseServiceImplTest",
+  "nbOriginalTestCases": 5,
+  "nbNewMutantKilled": 39,
+  "testCases": [
+    {
+      "name": "testDeleteCustomer_mg1_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 778,
+          "locationMethod": "addRule"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 778,
+          "locationMethod": "addRule"
+        }
+      ]
+    },
+    {
+      "name": "testAddSensorDevice",
+      "nbAssertionAdded": 0,
+      "nbInputAdded": 0,
+      "nbMutantKilled": 35,
+      "mutantsKilled": [
+        {
+          "ID": "null",
+          "lineNumber": 165,
+          "locationMethod": "getMessagesPerTimeCounter"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 226,
+          "locationMethod": "getServiceProviderId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 514,
+          "locationMethod": "getAccumulatedPropertiesString"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 620,
+          "locationMethod": "getTransitiveToPermanentMode"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 226,
+          "locationMethod": "getServiceProviderId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 514,
+          "locationMethod": "getAccumulatedPropertiesString"
+        },
+        {
+          "ID": "\"\"",
+          "lineNumber": 74,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 461,
+          "locationMethod": "getValidCounter"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 212,
+          "locationMethod": "getCustomerId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 74,
+          "locationMethod": "getResourceId"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 549,
+          "locationMethod": "getAdditionalProperties"
+        },
+        {
+          "ID": "1.0",
+          "lineNumber": 202,
+          "locationMethod": "getMessagesPerHour"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 561,
+          "locationMethod": "getFilterState"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 585,
+          "locationMethod": "getAccumulatedProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 620,
+          "locationMethod": "getTransitiveToPermanentMode"
+        },
+        {
+          "ID": "0L",
+          "lineNumber": 212,
+          "locationMethod": "getCustomerId"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 528,
+          "locationMethod": "getPrimaryPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 448,
+          "locationMethod": "getAdditionalPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 474,
+          "locationMethod": "getFilterConfigString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 165,
+          "locationMethod": "getMessagesPerTimeCounter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 500,
+          "locationMethod": "getFilterStateString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 609,
+          "locationMethod": "getNextTimeoutPerFilter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 597,
+          "locationMethod": "getPrimaryProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 444,
+          "locationMethod": "getCounter"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 188,
+          "locationMethod": "isMessagesPerHourOutdated"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 85,
+          "locationMethod": "isEmbeddedPositionSet"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 448,
+          "locationMethod": "getAdditionalPropertiesString"
+        },
+        {
+          "ID": "\"A\"",
+          "lineNumber": 500,
+          "locationMethod": "getFilterStateString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 461,
+          "locationMethod": "getValidCounter"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 528,
+          "locationMethod": "getPrimaryPropertiesString"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 202,
+          "locationMethod": "getMessagesPerHour"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 573,
+          "locationMethod": "getFilterConfig"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 536,
+          "locationMethod": "getCommandProperties"
+        },
+        {
+          "ID": "null",
+          "lineNumber": 474,
+          "locationMethod": "getFilterConfigString"
+        },
+        {
+          "ID": "1L",
+          "lineNumber": 444,
+          "locationMethod": "getCounter"
+        }
+      ]
+    },
+    {
+      "name": "testDeleteCustomer_mg3_failAssert0",
+      "nbAssertionAdded": 1,
+      "nbInputAdded": 1,
+      "nbMutantKilled": 2,
+      "mutantsKilled": [
+        {
+          "ID": "false",
+          "lineNumber": 793,
+          "locationMethod": "removeRule"
+        },
+        {
+          "ID": "true",
+          "lineNumber": 793,
+          "locationMethod": "removeRule"
+        }
+      ]
+    }
+  ]
+}
